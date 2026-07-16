@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .story-font {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  
+  <!-- Top Header Brand -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  
+  <!-- Content Group -->
+  <g transform="translate(120, 480)">
+    <!-- Title -->
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
+    
+    <!-- Subtitle -->
+    <text y="240" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Respondemos las consultas más comunes</tspan>
+      <tspan x="0" dy="48">antes de comenzar un proyecto.</tspan>
+    </text>
+    
+    <!-- Central Highlight Block -->
+    <g transform="translate(0, 480)">
+      <!-- Minimalist linear card / accent -->
+      <line x1="0" y1="0" x2="160" y2="0" stroke="#39FF14" stroke-width="4"/>
+      <text y="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
+        <tspan x="0" dy="0">Todo lo que</tspan>
+        <tspan x="0" dy="64">necesitás saber.</tspan>
+      </text>
+    </g>
+  </g>
+  
+  <!-- Footer Group -->
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>

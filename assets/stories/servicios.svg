@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .story-font {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  
+  <!-- Top Header Brand -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  
+  <!-- Content Group -->
+  <g transform="translate(120, 480)">
+    <!-- Title -->
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Servicios<tspan fill="#39FF14">.</tspan></text>
+    
+    <!-- Subtitle -->
+    <text y="90" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Creamos soluciones digitales diseñadas</tspan>
+      <tspan x="0" dy="48">para hacer crecer negocios.</tspan>
+    </text>
+    
+    <!-- List of Services -->
+    <g transform="translate(0, 320)">
+      <!-- Item 1: Desarrollo Web -->
+      <g transform="translate(0, 0)">
+        <!-- Globe Icon -->
+        <circle cx="28" cy="28" r="22" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <ellipse cx="28" cy="28" rx="8" ry="22" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <line x1="6" y1="28" x2="50" y2="28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+        <line x1="28" y1="6" x2="28" y2="50" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+        <text x="88" y="38" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Desarrollo Web</text>
+      </g>
+      
+      <!-- Item 2: Software a medida -->
+      <g transform="translate(0, 160)">
+        <!-- Code Brackets Icon -->
+        <path d="M 18 16 L 6 28 L 18 40 M 38 16 L 50 28 L 38 40 M 31 10 L 25 46" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="88" y="38" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Software a medida</text>
+      </g>
+      
+      <!-- Item 3: Automatización -->
+      <g transform="translate(0, 320)">
+        <!-- Gear Icon -->
+        <circle cx="28" cy="28" r="9" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <path d="M 28 6 L 28 11 M 28 45 L 28 50 M 6 28 L 11 28 M 45 28 L 50 28 M 12.4 12.4 L 16 16 M 40 40 L 43.6 43.6 M 12.4 43.6 L 16 40 M 40 12.4 L 43.6 16" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+        <text x="88" y="38" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Automatización</text>
+      </g>
+      
+      <!-- Item 4: Sistemas de Gestión & IA -->
+      <g transform="translate(0, 480)">
+        <!-- Microchip Icon -->
+        <rect x="10" y="10" width="36" height="36" rx="6" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <rect x="20" y="20" width="16" height="16" rx="2" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+        <path d="M 18 4 L 18 10 M 28 4 L 28 10 M 38 4 L 38 10 M 18 46 L 18 52 M 28 46 L 28 52 M 38 46 L 38 52 M 4 18 L 10 18 M 4 28 L 10 28 M 4 38 L 10 38 M 46 18 L 52 18 M 46 28 L 52 28 M 46 38 L 52 38" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="88" y="38" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Sistemas de Gestión &amp; IA</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Footer Group -->
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>

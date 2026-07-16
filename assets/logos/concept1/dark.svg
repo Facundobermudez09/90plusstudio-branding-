@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .studio-text { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 14px; text-anchor: middle; }
+    </style>
+  </defs>
+  <path d="M 97 42 A 18 18 0 1 0 61 42 A 18 18 0 1 0 97 42 M 97 42 L 97 60 A 18 18 0 0 1 79 78" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="115" y="24" width="36" height="54" rx="18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 163 38 L 179 38 M 171 30 L 171 46" fill="none" stroke="#39FF14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="120" y="104" fill="#FFFFFF" class="studio-text">STUDIO</text>
+</svg>

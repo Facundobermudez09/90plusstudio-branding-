@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .story-font {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  
+  <!-- Top Header Brand -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  
+  <!-- Content Group -->
+  <g transform="translate(120, 480)">
+    <!-- Title -->
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Contacto<tspan fill="#39FF14">.</tspan></text>
+    
+    <!-- Subtitle -->
+    <text y="120" class="story-font" font-weight="400" font-size="32" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Tenés una idea o un proyecto?</tspan>
+      <tspan x="0" dy="54">Nos encantaría conocerlo y ayudarte</tspan>
+      <tspan x="0" dy="48">a hacerlo realidad.</tspan>
+    </text>
+  </g>
+  
+  <!-- Footer Group -->
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">ESCRIBINOS Y CONVERSEMOS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>

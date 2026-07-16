@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .story-font {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  
+  <!-- Top Header Brand -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  
+  <!-- Content Group -->
+  <g transform="translate(120, 480)">
+    <!-- Title -->
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Nosotros<tspan fill="#39FF14">.</tspan></text>
+    
+    <!-- Subtitle -->
+    <text y="90" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Somos un estudio digital enfocado en crear</tspan>
+      <tspan x="0" dy="48">experiencias modernas mediante diseño,</tspan>
+      <tspan x="0" dy="48">desarrollo y tecnología.</tspan>
+    </text>
+    
+    <!-- Highlights List -->
+    <g transform="translate(0, 360)">
+      <!-- Item 1: Tecnología -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Tecnología.</text>
+      </g>
+      <!-- Item 2: Creatividad -->
+      <g transform="translate(0, 140)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Creatividad.</text>
+      </g>
+      <!-- Item 3: Calidad -->
+      <g transform="translate(0, 280)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Calidad.</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Footer Group -->
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>

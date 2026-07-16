@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <!-- Rounded Black Background -->
+  <rect width="64" height="64" rx="16" fill="#000000" />
+  <!-- ISOTIPO -->
+  <!-- Top-Left (rounded top-left corner) -->
+  <path d="M 30 16 L 30 30 L 16 30 L 16 23 A 7 7 0 0 1 23 16 Z" fill="#FFFFFF" />
+  <!-- Bottom-Left (rounded bottom-left corner) -->
+  <path d="M 30 34 L 30 48 L 23 48 A 7 7 0 0 1 16 41 L 16 34 Z" fill="#FFFFFF" />
+  <!-- Bottom-Right (rounded bottom-right corner) -->
+  <path d="M 34 34 L 48 34 L 48 41 A 7 7 0 0 1 41 48 L 34 48 Z" fill="#FFFFFF" />
+  <!-- Top-Right Plus (Green) -->
+  <path d="M 37 23 L 45 23 M 41 19 L 41 27" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

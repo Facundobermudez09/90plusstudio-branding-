@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <mask id="favicon-cut-out">
+      <!-- Everything is white (opaque) by default -->
+      <rect width="64" height="64" fill="#FFFFFF" />
+      <!-- Black circle to mask out a portion of the "0" outline -->
+      <circle cx="45" cy="26" r="7" fill="#000000" />
+    </mask>
+  </defs>
+  <!-- Rounded Black Background -->
+  <rect width="64" height="64" rx="16" fill="#000000" />
+  <!-- 9 -->
+  <path d="M 25 29 A 7 7 0 1 0 11 29 A 7 7 0 1 0 25 29 M 25 29 L 25 36 A 7 7 0 0 1 18 43" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- 0 (masked for cutout) -->
+  <rect x="31" y="22" width="14" height="21" rx="7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" mask="url(#favicon-cut-out)" />
+  <!-- + (Green) -->
+  <path d="M 41 26 L 49 26 M 45 22 L 45 30" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

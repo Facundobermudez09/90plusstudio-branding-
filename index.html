@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90+ Studio - Brand Identity Portal</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=4">
+</head>
+<body>
+
+  <!-- Top Decorative Neon Bar -->
+  <div class="top-neon-bar"></div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="brand-logo-mini">
+        <svg viewBox="0 0 64 64" width="36" height="36">
+          <path d="M 25 29 A 7 7 0 1 0 11 29 A 7 7 0 1 0 25 29 M 25 29 L 25 36 A 7 7 0 0 1 18 43" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="31" y="22" width="14" height="21" rx="7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M 48 27 L 54 27 M 51 24 L 51 30" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="brand-title">90+ <span class="accent-text">STUDIO</span></span>
+      </div>
+      <nav class="main-nav">
+        <a href="#showroom" class="nav-link">Showroom</a>
+        <a href="#favicons" class="nav-link">Favicons</a>
+        <a href="#tokens" class="nav-link">Tokens</a>
+        <a href="#mockups" class="nav-link">Mockups</a>
+        <a href="#highlights" class="nav-link">Destacadas</a>
+        <a href="#stories" class="nav-link">Stories</a>
+        <a href="#downloads" class="nav-link btn-download-all-nav">Descargas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-badge">Identidad de Marca Oficial</div>
+      <h1 class="hero-title">SIEMPRE UN PASO <span class="neon-text">MÁS.</span></h1>
+      <p class="hero-subtitle">
+        Portal interactivo de activos de marca y sistema de diseño para <strong>90+ Studio</strong>. 
+        Explora los conceptos, previsualiza plantillas en tiempo real y descarga recursos vectoriales listos para producción.
+      </p>
+    </section>
+
+    <!-- Showroom Section -->
+    <section id="showroom" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Visualizador de Logotipos</h2>
+          <p class="section-desc">Selecciona un concepto, ajusta su apariencia en tiempo real y expórtalo en formato vectorial (SVG) o alta resolución (PNG).</p>
+        </div>
+      </div>
+
+      <!-- Showroom Layout Grid -->
+      <div class="showroom-grid">
+        <!-- Sidebar Controls -->
+        <div class="showroom-controls">
+          <div class="control-group">
+            <label class="control-label">Concepto de Diseño</label>
+            <div class="concept-tabs">
+              <button class="concept-tab active" data-concept="c1">
+                <span class="tab-num">01</span>
+                <span class="tab-name">Wordmark</span>
+              </button>
+              <button class="concept-tab" data-concept="c2">
+                <span class="tab-num">02</span>
+                <span class="tab-name">Isotipo + WM</span>
+              </button>
+              <button class="concept-tab" data-concept="c3">
+                <span class="tab-num">03</span>
+                <span class="tab-name">Monograma</span>
+              </button>
+              <button class="concept-tab" data-concept="c4">
+                <span class="tab-num">04</span>
+                <span class="tab-name">Protagonista "+"</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Esquema de Color</label>
+            <div class="color-options">
+              <button class="color-opt active" data-color="light">Fondo Claro</button>
+              <button class="color-opt" data-color="dark">Fondo Oscuro</button>
+              <button class="color-opt" data-color="transparent">Transparente</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Variante Estilística</label>
+            <div class="variant-options">
+              <button class="variant-opt active" data-variant="colored">Paleta Oficial (Verde Neón)</button>
+              <button class="variant-opt" data-variant="mono">Monocromático</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="range-header">
+              <label class="control-label">Tamaño del Logo</label>
+              <span id="logo-size-val">200px</span>
+            </div>
+            <input type="range" id="logo-size-slider" min="120" max="400" value="220" class="custom-slider">
+          </div>
+
+          <!-- Download Action Buttons -->
+          <div class="download-actions">
+            <button id="btn-download-svg" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Descargar SVG
+            </button>
+            <button id="btn-download-png" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Exportar PNG HD
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Canvas Viewport -->
+        <div class="showroom-viewport-wrapper">
+          <div class="showroom-viewport" id="viewport-bg">
+            <div class="logo-render-container" id="logo-render-box" style="width: 220px;">
+              <!-- Target for rendering SVG inline -->
+            </div>
+          </div>
+          <div class="viewport-caption">
+            Concepto <span id="caption-concept">01</span> &bull; Variante <span id="caption-variant">Oficial</span> &bull; Fondo <span id="caption-bg">Claro</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favicon & App Icon Section -->
+    <section id="favicons" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Favicons y Accesos Directos</h2>
+          <p class="section-desc">El identificador visual optimizado para pestañas de navegador (16x16 / 32x32), pantallas móviles y perfiles digitales.</p>
+        </div>
+      </div>
+
+      <div class="favicons-showcase">
+        <!-- Favicon Column 1 -->
+        <div class="favicon-card">
+          <div class="favicon-card-preview">
+            <div class="avatar-circular">
+              <img src="assets/favicons/favicon_c1.svg" alt="Avatar C1">
+            </div>
+            <div class="app-icon-squircle">
+              <img src="assets/favicons/favicon_c1.svg" alt="App Icon C1">
+            </div>
+            <!-- Fake Browser Tab -->
+            <div class="fake-tab">
+              <img src="assets/favicons/favicon_c1.svg" class="fake-tab-icon" alt="Tab Icon">
+              <span class="fake-tab-title">90+ Studio</span>
+            </div>
+          </div>
+          <div class="favicon-card-info">
+            <h3>Favicon C01</h3>
+            <p>Wordmark compacto en contenedor negro.</p>
+            <a href="assets/favicons/favicon_c1.svg" download="favicon_concept1.svg" class="btn-text-download">Descargar SVG</a>
+          </div>
+        </div>
+
+        <!-- Favicon Column 2 -->
+        <div class="favicon-card">
+          <div class="favicon-card-preview">
+            <div class="avatar-circular">
+              <img src="assets/favicons/favicon_c2.svg" alt="Avatar C2">
+            </div>
+            <div class="app-icon-squircle">
+              <img src="assets/favicons/favicon_c2.svg" alt="App Icon C2">
+            </div>
+            <div class="fake-tab">
+              <img src="assets/favicons/favicon_c2.svg" class="fake-tab-icon" alt="Tab Icon">
+              <span class="fake-tab-title">90+ Studio</span>
+            </div>
+          </div>
+          <div class="favicon-card-info">
+            <h3>Favicon C02</h3>
+            <p>Isotipo geométrico en contenedor negro.</p>
+            <a href="assets/favicons/favicon_c2.svg" download="favicon_concept2.svg" class="btn-text-download">Descargar SVG</a>
+          </div>
+        </div>
+
+        <!-- Favicon Column 3 -->
+        <div class="favicon-card">
+          <div class="favicon-card-preview">
+            <div class="avatar-circular">
+              <img src="assets/favicons/favicon_c3.svg" alt="Avatar C3">
+            </div>
+            <div class="app-icon-squircle">
+              <img src="assets/favicons/favicon_c3.svg" alt="App Icon C3">
+            </div>
+            <div class="fake-tab">
+              <img src="assets/favicons/favicon_c3.svg" class="fake-tab-icon" alt="Tab Icon">
+              <span class="fake-tab-title">90+ Studio</span>
+            </div>
+          </div>
+          <div class="favicon-card-info">
+            <h3>Favicon C03</h3>
+            <p>Monograma integrado en contenedor negro.</p>
+            <a href="assets/favicons/favicon_c3.svg" download="favicon_concept3.svg" class="btn-text-download">Descargar SVG</a>
+          </div>
+        </div>
+
+        <!-- Favicon Column 4 -->
+        <div class="favicon-card">
+          <div class="favicon-card-preview">
+            <div class="avatar-circular">
+              <img src="assets/favicons/favicon_c4.svg" alt="Avatar C4">
+            </div>
+            <div class="app-icon-squircle">
+              <img src="assets/favicons/favicon_c4.svg" alt="App Icon C4">
+            </div>
+            <div class="fake-tab">
+              <img src="assets/favicons/favicon_c4.svg" class="fake-tab-icon" alt="Tab Icon">
+              <span class="fake-tab-title">90+ Studio</span>
+            </div>
+          </div>
+          <div class="favicon-card-info">
+            <h3>Favicon C04</h3>
+            <p>Plus protagonista en contenedor negro.</p>
+            <a href="assets/favicons/favicon_c4.svg" download="favicon_concept4.svg" class="btn-text-download">Descargar SVG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Tokens Section -->
+    <section id="tokens" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Tokens de Diseño</h2>
+          <p class="section-desc">La paleta de colores oficial, tipografía institucional y la retícula geométrica que componen la marca.</p>
+        </div>
+      </div>
+
+      <div class="tokens-grid">
+        <!-- Color Palette Token -->
+        <div class="token-panel">
+          <h3>Paleta de Colores</h3>
+          <p class="panel-subtitle">Haz clic en cualquier muestra para copiar el código hexadecimal.</p>
+          <div class="color-swatches-list">
+            <div class="swatch-item" data-hex="#000000">
+              <div class="swatch-color" style="background-color: #000000; border: 1px solid #333;"></div>
+              <div class="swatch-meta">
+                <span class="swatch-name">Pure Black</span>
+                <span class="swatch-hex">#000000</span>
+              </div>
+            </div>
+            <div class="swatch-item" data-hex="#FFFFFF">
+              <div class="swatch-color" style="background-color: #FFFFFF; border: 1px solid #eee;"></div>
+              <div class="swatch-meta">
+                <span class="swatch-name">Pure White</span>
+                <span class="swatch-hex">#FFFFFF</span>
+              </div>
+            </div>
+            <div class="swatch-item" data-hex="#39FF14">
+              <div class="swatch-color" style="background-color: #39FF14;"></div>
+              <div class="swatch-meta">
+                <span class="swatch-name">Neon Green</span>
+                <span class="swatch-hex">#39FF14</span>
+              </div>
+            </div>
+          </div>
+          <div class="toast" id="color-toast">¡Código copiado al portapapeles!</div>
+        </div>
+
+        <!-- Typography Token -->
+        <div class="token-panel">
+          <h3>Tipografía Oficial</h3>
+          <p class="panel-subtitle">General Sans / Plus Jakarta Sans (Alternativa Web)</p>
+          <div class="typography-display">
+            <div class="font-specimen">
+              <span class="specimen-label">Regular 400</span>
+              <span class="specimen-text font-regular">AaBbCc 0123456789</span>
+            </div>
+            <div class="font-specimen">
+              <span class="specimen-label">Medium 500</span>
+              <span class="specimen-text font-medium">AaBbCc 0123456789</span>
+            </div>
+            <div class="font-specimen">
+              <span class="specimen-label">Bold 700</span>
+              <span class="specimen-text font-bold">AaBbCc 0123456789</span>
+            </div>
+            <div class="font-specimen">
+              <span class="specimen-label">Logotype Tracking</span>
+              <span class="specimen-text font-tracking">S T U D I O</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Safety Area / Grid System -->
+        <div class="token-panel full-width-panel">
+          <h3>Área de Seguridad y Retícula</h3>
+          <p class="panel-subtitle">Visualización del margen de seguridad requerido (marcado en X) basado en las proporciones de los logotipos.</p>
+          <div class="safety-area-showcase">
+            <div class="grid-card active" id="grid-c1-view">
+              <!-- Inline Grid Overlay Logo -->
+              <div class="grid-visualizer-container">
+                <div class="grid-overlay"></div>
+                <div class="logo-under-grid">
+                  <svg viewBox="0 0 240 120" width="220">
+                    <!-- Red Margin Box -->
+                    <rect x="53" y="16" width="138" height="96" fill="none" stroke="#FF3333" stroke-width="1.5" stroke-dasharray="4 4" />
+                    <!-- Security Margin Indicator Labels -->
+                    <text x="46" y="65" fill="#FF3333" font-size="9" font-family="sans-serif" text-anchor="middle">X</text>
+                    <text x="198" y="65" fill="#FF3333" font-size="9" font-family="sans-serif" text-anchor="middle">X</text>
+                    <text x="119" y="11" fill="#FF3333" font-size="9" font-family="sans-serif" text-anchor="middle">X</text>
+                    
+                    <!-- Logo Elements -->
+                    <path d="M 97 42 A 18 18 0 1 0 61 42 A 18 18 0 1 0 97 42 M 97 42 L 97 60 A 18 18 0 0 1 79 78" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                    <rect x="115" y="24" width="36" height="54" rx="18" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                    <path d="M 163 38 L 179 38 M 171 30 L 171 46" fill="none" stroke="#39FF14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                    <text x="120" y="104" fill="#000000" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" letter-spacing="14" text-anchor="middle" opacity="0.6">STUDIO</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="safety-desc">
+              <span class="badge badge-grid">Retícula Activa</span>
+              <p>El área de seguridad está definida por la proporción <strong>X</strong>, que equivale a la mitad de la altura de la cabeza del número "9". Ningún elemento ajeno a la marca o texto complementario debe invadir esta zona perimetral para asegurar la correcta lectura y jerarquía visual del identificador en cualquier soporte.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mockups & Stationery Section -->
+    <section id="mockups" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Papelería y Componentes Web</h2>
+          <p class="section-desc">Previsualiza los logotipos aplicados en tarjetas personales y barras de navegación del sitio web.</p>
+        </div>
+      </div>
+
+      <div class="mockups-workspace">
+        <!-- Interactive Navigation Bar Mockup -->
+        <div class="mockup-panel">
+          <div class="mockup-panel-header">
+            <h3>Encabezado de Sitio Web (Header)</h3>
+            <div class="mockup-controls">
+              <button class="mockup-btn active" id="btn-header-dark">Modo Oscuro</button>
+              <button class="mockup-btn" id="btn-header-light">Modo Claro</button>
+            </div>
+          </div>
+
+          <div class="header-mockup-viewport" id="header-mockup-box">
+            <!-- Header Template -->
+            <nav class="web-navbar dark-theme" id="web-navbar-element">
+              <div class="navbar-logo">
+                <svg viewBox="0 0 240 120" width="90" class="nav-logo-svg">
+                  <!-- Embeds logo inline dynamically based on concept -->
+                </svg>
+              </div>
+              <ul class="navbar-links">
+                <li><a href="#" class="active">Trabajo</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+              <div class="navbar-status">
+                <span class="status-dot"></span>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!-- 3D Personal Business Card Mockup -->
+        <div class="mockup-panel">
+          <div class="mockup-panel-header">
+            <h3>Tarjeta Personal (Tarjeta de Visita)</h3>
+            <span class="badge badge-interactive">Mueve el mouse para rotar en 3D</span>
+          </div>
+
+          <div class="card-mockup-viewport">
+            <div class="card-3d-container" id="card-3d">
+              <!-- Front Side -->
+              <div class="business-card card-front">
+                <div class="card-logo">
+                  <!-- Selected Logo SVG Rendered Here -->
+                  <div class="card-logo-placeholder"></div>
+                </div>
+                <div class="card-divider"></div>
+                <div class="card-details">
+                  <span class="card-service">Digital Experiences</span>
+                  <span class="card-subtitle">Web Development &bull; UI/UX Design</span>
+                  <span class="card-email">hello@90plus.studio</span>
+                  <span class="card-web">90plus.studio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Highlights Section -->
+    <section id="highlights" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Portadas de Instagram (Highlights)</h2>
+          <p class="section-desc">Set de portadas premium y atemporales para las historias destacadas de <strong>90+ Studio</strong>. Diseño vectorial flat sobre negro absoluto con sutiles detalles de acento en verde flúor.</p>
+        </div>
+      </div>
+
+      <!-- Mobile Profile Instagram Simulator Preview -->
+      <div class="instagram-simulator-container">
+        <div class="instagram-profile-header">
+          <span class="inst-username">90plus.studio</span>
+        </div>
+        <div class="instagram-stories-bar" id="instagram-stories-bar-element">
+          <!-- Populated by index.js dynamically -->
+        </div>
+      </div>
+
+      <!-- Grid of Downloadable Cover Cards -->
+      <div class="highlights-grid" id="highlights-grid-container">
+        <!-- Populated by index.js dynamically -->
+      </div>
+    </section>
+
+    <!-- Instagram Stories Section -->
+    <section id="stories" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Historias de Instagram (Stories)</h2>
+          <p class="section-desc">Set de plantillas premium y ultra-minimalistas diseñadas a resolución nativa (1080x1920 px) para cada sección. Flat design absoluto inspirado en estéticas de alta tecnología.</p>
+        </div>
+      </div>
+
+      <div class="stories-layout">
+        <!-- Sidebar Selector -->
+        <div class="stories-sidebar">
+          <div class="control-group">
+            <label class="control-label">Seleccionar Plantilla</label>
+            <div class="story-selector-tabs">
+              <button class="story-tab active" data-story="servicios">
+                <span class="tab-num">01</span>
+                <span class="tab-name">Servicios</span>
+              </button>
+              <button class="story-tab" data-story="nosotros">
+                <span class="tab-num">02</span>
+                <span class="tab-name">Nosotros</span>
+              </button>
+              <button class="story-tab" data-story="contacto">
+                <span class="tab-num">03</span>
+                <span class="tab-name">Contacto</span>
+              </button>
+              <button class="story-tab" data-story="preguntas">
+                <span class="tab-num">04</span>
+                <span class="tab-name">Preguntas Frecuentes</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="story-meta-box">
+            <h4 id="story-meta-title">Servicios</h4>
+            <p id="story-meta-desc">Pantalla de bienvenida de la sección de servicios con iconos vectoriales minimalistas.</p>
+            <div class="story-colors-preview">
+              <span class="color-dot-preview" style="background-color: #0A0A0A; border: 1px solid #333;" title="Negro absoluto"></span>
+              <span class="color-dot-preview" style="background-color: #FFFFFF;" title="Blanco"></span>
+              <span class="color-dot-preview" style="background-color: #39FF14;" title="Verde Flúor"></span>
+            </div>
+          </div>
+
+          <!-- Download Action Buttons -->
+          <div class="download-actions" style="margin-top: 24px;">
+            <button id="btn-download-story-svg" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Descargar SVG
+            </button>
+            <button id="btn-download-story-png" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Exportar PNG HD
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulator Viewport -->
+        <div class="story-viewport-wrapper">
+          <div class="phone-simulator">
+            <div class="phone-speaker"></div>
+            <div class="phone-camera"></div>
+            <div class="phone-screen" id="story-render-box">
+              <!-- Rendered SVG story inside here -->
+            </div>
+          </div>
+          <div class="viewport-caption">
+            Visualización 9:16 (1080x1920 px) &bull; Modo de previsualización activa
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Índice de Descargas Directas</h2>
+          <p class="section-desc">Consigue los archivos vectoriales SVG directamente desde aquí. Todos los archivos están guardados en tu espacio de trabajo local.</p>
+        </div>
+      </div>
+
+      <div class="downloads-grid-box">
+        <!-- C1 Group -->
+        <div class="download-group-card">
+          <h4>Concepto 01: Wordmark</h4>
+          <div class="download-list">
+            <a href="assets/logos/concept1/light.svg" download="concept1_light.svg" class="download-file-item">
+              <span class="file-name">concept1_light.svg</span>
+              <span class="file-tag tag-light">Modo Claro</span>
+            </a>
+            <a href="assets/logos/concept1/dark.svg" download="concept1_dark.svg" class="download-file-item">
+              <span class="file-name">concept1_dark.svg</span>
+              <span class="file-tag tag-dark">Modo Oscuro</span>
+            </a>
+            <a href="assets/logos/concept1/mono_light.svg" download="concept1_mono_light.svg" class="download-file-item">
+              <span class="file-name">concept1_mono_light.svg</span>
+              <span class="file-tag tag-mono">Monocromo Claro</span>
+            </a>
+            <a href="assets/logos/concept1/mono_dark.svg" download="concept1_mono_dark.svg" class="download-file-item">
+              <span class="file-name">concept1_mono_dark.svg</span>
+              <span class="file-tag tag-mono">Monocromo Oscuro</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- C2 Group -->
+        <div class="download-group-card">
+          <h4>Concepto 02: Isotipo + WM</h4>
+          <div class="download-list">
+            <a href="assets/logos/concept2/light.svg" download="concept2_light.svg" class="download-file-item">
+              <span class="file-name">concept2_light.svg</span>
+              <span class="file-tag tag-light">Modo Claro</span>
+            </a>
+            <a href="assets/logos/concept2/dark.svg" download="concept2_dark.svg" class="download-file-item">
+              <span class="file-name">concept2_dark.svg</span>
+              <span class="file-tag tag-dark">Modo Oscuro</span>
+            </a>
+            <a href="assets/logos/concept2/mono_light.svg" download="concept2_mono_light.svg" class="download-file-item">
+              <span class="file-name">concept2_mono_light.svg</span>
+              <span class="file-tag tag-mono">Monocromo Claro</span>
+            </a>
+            <a href="assets/logos/concept2/mono_dark.svg" download="concept2_mono_dark.svg" class="download-file-item">
+              <span class="file-name">concept2_mono_dark.svg</span>
+              <span class="file-tag tag-mono">Monocromo Oscuro</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- C3 Group -->
+        <div class="download-group-card">
+          <h4>Concepto 03: Monograma</h4>
+          <div class="download-list">
+            <a href="assets/logos/concept3/light.svg" download="concept3_light.svg" class="download-file-item">
+              <span class="file-name">concept3_light.svg</span>
+              <span class="file-tag tag-light">Modo Claro</span>
+            </a>
+            <a href="assets/logos/concept3/dark.svg" download="concept3_dark.svg" class="download-file-item">
+              <span class="file-name">concept3_dark.svg</span>
+              <span class="file-tag tag-dark">Modo Oscuro</span>
+            </a>
+            <a href="assets/logos/concept3/mono_light.svg" download="concept3_mono_light.svg" class="download-file-item">
+              <span class="file-name">concept3_mono_light.svg</span>
+              <span class="file-tag tag-mono">Monocromo Claro</span>
+            </a>
+            <a href="assets/logos/concept3/mono_dark.svg" download="concept3_mono_dark.svg" class="download-file-item">
+              <span class="file-name">concept3_mono_dark.svg</span>
+              <span class="file-tag tag-mono">Monocromo Oscuro</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- C4 Group -->
+        <div class="download-group-card">
+          <h4>Concepto 04: Protagonista "+"</h4>
+          <div class="download-list">
+            <a href="assets/logos/concept4/light.svg" download="concept4_light.svg" class="download-file-item">
+              <span class="file-name">concept4_light.svg</span>
+              <span class="file-tag tag-light">Modo Claro</span>
+            </a>
+            <a href="assets/logos/concept4/dark.svg" download="concept4_dark.svg" class="download-file-item">
+              <span class="file-name">concept4_dark.svg</span>
+              <span class="file-tag tag-dark">Modo Oscuro</span>
+            </a>
+            <a href="assets/logos/concept4/mono_light.svg" download="concept4_mono_light.svg" class="download-file-item">
+              <span class="file-name">concept4_mono_light.svg</span>
+              <span class="file-tag tag-mono">Monocromo Claro</span>
+            </a>
+            <a href="assets/logos/concept4/mono_dark.svg" download="concept4_mono_dark.svg" class="download-file-item">
+              <span class="file-name">concept4_mono_dark.svg</span>
+              <span class="file-tag tag-mono">Monocromo Oscuro</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Stories Group -->
+        <div class="download-group-card">
+          <h4>Historias de Instagram (Stories)</h4>
+          <div class="download-list">
+            <a href="assets/stories/servicios.svg" download="90plus_story_servicios.svg" class="download-file-item">
+              <span class="file-name">story_servicios.svg</span>
+              <span class="file-tag tag-mono">Servicios</span>
+            </a>
+            <a href="assets/stories/nosotros.svg" download="90plus_story_nosotros.svg" class="download-file-item">
+              <span class="file-name">story_nosotros.svg</span>
+              <span class="file-tag tag-mono">Nosotros</span>
+            </a>
+            <a href="assets/stories/contacto.svg" download="90plus_story_contacto.svg" class="download-file-item">
+              <span class="file-name">story_contacto.svg</span>
+              <span class="file-tag tag-mono">Contacto</span>
+            </a>
+            <a href="assets/stories/preguntas.svg" download="90plus_story_preguntas.svg" class="download-file-item">
+              <span class="file-name">story_preguntas.svg</span>
+              <span class="file-tag tag-mono">Preguntas</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <svg viewBox="0 0 64 64" width="28" height="28">
+          <path d="M 25 29 A 7 7 0 1 0 11 29 A 7 7 0 1 0 25 29 M 25 29 L 25 36 A 7 7 0 0 1 18 43" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="31" y="22" width="14" height="21" rx="7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M 48 27 L 54 27 M 51 24 L 51 30" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>90+ <span class="green-text">STUDIO</span></span>
+      </div>
+      <div class="footer-motto">SIEMPRE UN PASO <span class="green-text">MÁS.</span></div>
+      <div class="footer-copy">&copy; 2026 90+ Studio. Todos los derechos reservados. Identidad de marca profesional.</div>
+    </div>
+  </footer>
+
+  <!-- Canvas elements for generating PNG download files locally -->
+  <canvas id="export-canvas" style="display: none;"></canvas>
+
+  <script src="index.js?v=4"></script>
+</body>
+</html>
