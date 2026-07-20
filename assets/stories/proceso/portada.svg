@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Subtle Grid Overlay -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins / Fine Lines -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Giant Background "01" -->
+  <text x="540" y="1420" text-anchor="middle" class="story-font" font-weight="900" font-size="720" fill="#121212" letter-spacing="-20" opacity="0.8">01</text>
+
+  <!-- Logo Section -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Content Section -->
+  <g transform="translate(120, 680)">
+    <!-- Section Indicator -->
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="8" fill="#39FF14">PROCESO</text>
+    <circle cx="205" cy="-12" r="6" fill="#39FF14" />
+    
+    <!-- Title -->
+    <text y="130" class="story-font" font-weight="800" font-size="76" letter-spacing="-2" fill="#FFFFFF">Así transformamos</text>
+    <text y="220" class="story-font" font-weight="800" font-size="76" letter-spacing="-2" fill="#FFFFFF">una idea en una</text>
+    <text y="310" class="story-font" font-weight="800" font-size="76" letter-spacing="-2" fill="#FFFFFF">solución digital<tspan fill="#39FF14">.</tspan></text>
+    
+    <!-- Subtitle / Paragraph -->
+    <text y="480" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Trabajamos cada proyecto con una metodología</tspan>
+      <tspan x="0" dy="54">clara combinando estrategia, diseño y desarrollo.</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Section -->
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA EMPEZAR <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>

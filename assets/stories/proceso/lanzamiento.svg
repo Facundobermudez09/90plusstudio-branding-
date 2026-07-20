@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">05 — LANZAMIENTO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Ponemos el proyecto online</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">configurando:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Dominio e infraestructura</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Integraciones y pasarelas</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Servicios necesarios</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Entregamos una solución lista para operar,</tspan>
+      <tspan x="0" dy="50">configurando dominios y servicios en la nube.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Cloud Deploy Node -->
+  <g transform="translate(240, 1180)">
+    <!-- Globe network background -->
+    <circle cx="300" cy="180" r="130" fill="none" stroke="#171717" stroke-width="3" />
+    <ellipse cx="300" cy="180" rx="50" ry="130" fill="none" stroke="#171717" stroke-width="3" />
+    <line x1="170" y1="180" x2="430" y2="180" stroke="#171717" stroke-width="3" />
+    
+    <!-- Uploading indicator arrow -->
+    <path d="M 300 220 L 300 100 M 300 100 L 270 130 M 300 100 L 330 130" fill="none" stroke="#39FF14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Environment Server Badge -->
+    <rect x="180" y="30" width="240" height="48" rx="8" fill="#111111" stroke="#39FF14" stroke-width="2" />
+    <circle cx="210" cy="54" r="8" fill="#39FF14" />
+    <text x="236" y="62" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">production.env</text>
+    
+    <line x1="300" y1="78" x2="300" y2="100" stroke="#39FF14" stroke-width="3" stroke-dasharray="4 4" />
+    
+    <!-- DEPLOY SUCCESSFUL toast -->
+    <rect x="160" y="290" width="280" height="48" rx="24" fill="#0D0D0D" stroke="#222" stroke-width="2" />
+    <circle cx="190" cy="314" r="8" fill="#39FF14" />
+    <text x="214" y="321" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF" letter-spacing="2">DEPLOY SUCCESS</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>

@@ -726,10 +726,11 @@ function initInstagramHighlights() {
 
 // 8. DATABASE OF INSTAGRAM STORIES (1080x1920px viewbox)
 const storiesDatabase = {
-  servicios: {
-    title: 'Servicios',
-    desc: 'Pantalla de bienvenida de la sección de servicios con iconos vectoriales minimalistas.',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  identity: {
+    servicios: {
+      title: 'Servicios',
+      desc: 'Pantalla de bienvenida de la sección de servicios con iconos vectoriales minimalistas.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
@@ -785,11 +786,11 @@ const storiesDatabase = {
     <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
   </g>
 </svg>`
-  },
-  nosotros: {
-    title: 'Nosotros',
-    desc: 'Presentación institucional del estudio y sus pilares metodológicos.',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+    },
+    nosotros: {
+      title: 'Nosotros',
+      desc: 'Presentación institucional del estudio y sus pilares metodológicos.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
@@ -833,11 +834,59 @@ const storiesDatabase = {
     <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
   </g>
 </svg>`
-  },
-  contacto: {
-    title: 'Contacto',
-    desc: 'Diseño ultra-minimalista y editorial para iniciar contacto y conversar sobre nuevos proyectos.',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+    },
+    proceso: {
+      title: 'Proceso',
+      desc: 'Nuestra metodología de trabajo explicada de forma clara y profesional.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .story-font {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Proceso<tspan fill="#39FF14">.</tspan></text>
+    
+    <text y="90" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Cómo trabajamos con nuestros clientes,</tspan>
+      <tspan x="0" dy="48">llevando orden y transparencia desde la</tspan>
+      <tspan x="0" dy="48">primera reunión hasta la evolución del proyecto.</tspan>
+    </text>
+    
+    <g transform="translate(0, 360)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Planificación ordenada.</text>
+      </g>
+      <g transform="translate(0, 140)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Desarrollo premium.</text>
+      </g>
+      <g transform="translate(0, 280)">
+        <rect x="0" y="10" width="18" height="18" rx="3" fill="#39FF14"/>
+        <text x="56" y="28" class="story-font" font-weight="600" font-size="34" fill="#FFFFFF">Evolución continua.</text>
+      </g>
+    </g>
+  </g>
+  
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>`
+    },
+    contacto: {
+      title: 'Contacto',
+      desc: 'Diseño ultra-minimalista y editorial para iniciar contacto y conversar sobre nuevos proyectos.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
@@ -866,11 +915,11 @@ const storiesDatabase = {
     <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">ESCRIBINOS Y CONVERSEMOS <tspan fill="#39FF14">→</tspan></text>
   </g>
 </svg>`
-  },
-  preguntas: {
-    title: 'Preguntas Frecuentes',
-    desc: 'Respuestas a las inquietudes más habituales antes de dar inicio.',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+    },
+    preguntas: {
+      title: 'Preguntas Frecuentes',
+      desc: 'Respuestas a las inquietudes más habituales antes de dar inicio.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
@@ -906,10 +955,719 @@ const storiesDatabase = {
     <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
   </g>
 </svg>`
+    }
+  },
+  process: {
+    portada: {
+      title: 'Portada',
+      desc: 'Portada oficial de la destacada "PROCESO" con el logotipo y retícula tecnológica.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Giant Logo Centered -->
+  <g transform="translate(540, 760)">
+    <!-- Scale drawing of logo 90+ -->
+    <g transform="translate(-128, -128) scale(4)">
+      <!-- Number 9 shape -->
+      <path d="M 25 29 A 7 7 0 1 0 11 29 A 7 7 0 1 0 25 29 M 25 29 L 25 36 A 7 7 0 0 1 18 43" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Number 0 shape -->
+      <rect x="31" y="22" width="14" height="21" rx="7" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Plus sign (+) -->
+      <path d="M 48 27 L 54 27 M 51 24 L 51 30" fill="none" stroke="#39FF14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- Typography Title -->
+  <g transform="translate(540, 1100)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="64" letter-spacing="24" fill="#FFFFFF">PROCESO</text>
+    <text y="70" text-anchor="middle" class="story-font" font-weight="500" font-size="24" letter-spacing="8" fill="#39FF14">METODOLOGÍA DE TRABAJO</text>
+  </g>
+
+  <!-- Subtitle Editorial Paragraph -->
+  <g transform="translate(540, 1440)">
+    <text text-anchor="middle" class="story-font" font-weight="400" font-size="28" fill="#555555">Cómo creamos soluciones digitales premium</text>
+    <text y="44" text-anchor="middle" class="story-font" font-weight="400" font-size="28" fill="#555555">desde la idea hasta el producto final.</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">DESLIZÁ PARA EMPEZAR &bull; 90+ STUDIO</text>
+  </g>
+</svg>`
+    },
+    descubrimiento: {
+      title: 'Descubrimiento',
+      desc: 'Fase de contacto inicial, alineación de objetivos y entendimiento del negocio.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">01 — DESCUBRIMIENTO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Entendemos tu negocio:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 680)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Primera reunión de alineación</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Entendimiento de objetivos</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Análisis del público objetivo</text>
+
+    <!-- Paragraph -->
+    <text y="310" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Escuchamos tus necesidades para definir el rumbo</tspan>
+      <tspan x="0" dy="50">y alcance estratégico del proyecto.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Interactive briefing status -->
+  <g transform="translate(180, 1180)">
+    <!-- Card container -->
+    <rect x="0" y="0" width="720" height="260" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+    
+    <!-- Team profile icons mockup -->
+    <circle cx="90" cy="130" r="44" fill="#171717" />
+    <path d="M 74 136 C 74 126 80 120 90 120 C 100 120 106 126 106 136" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" />
+    <circle cx="90" cy="108" r="12" fill="#39FF14" />
+
+    <circle cx="210" cy="130" r="44" fill="#171717" />
+    <path d="M 194 136 C 194 126 200 120 210 120 C 220 120 226 126 226 136" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <circle cx="210" cy="108" r="12" fill="#FFFFFF" />
+    
+    <!-- Arrow -->
+    <path d="M 280 130 C 310 90 350 90 380 130" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" />
+    <path d="M 380 130 L 366 120 M 380 130 L 366 140" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Status Card -->
+    <rect x="420" y="80" width="240" height="100" rx="12" fill="#111111" stroke="#222222" stroke-width="2" />
+    <text x="540" y="130" class="story-font" font-weight="700" font-size="24" fill="#FFFFFF" text-anchor="middle">BRIEFING</text>
+    <text x="540" y="156" class="story-font" font-weight="600" font-size="14" fill="#39FF14" text-anchor="middle" letter-spacing="2">COMPLETADO</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    planificacion: {
+      title: 'Planificación',
+      desc: 'Estructuración de sprints, entregables, arquitectura técnica y cronograma.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — PLANIFICACIÓN</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Definimos:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 680)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Estructura del proyecto</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Funcionalidades</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Tecnología</text>
+
+    <!-- Point 4 -->
+    <rect x="0" y="210" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="230" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Tiempos de trabajo</text>
+
+    <!-- Paragraph -->
+    <text y="380" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Organizamos meticulosamente cada etapa</tspan>
+      <tspan x="0" dy="50">y entregable antes de escribir código.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Roadmap Gantt -->
+  <g transform="translate(240, 1180)">
+    <!-- Timeline Vertical Line -->
+    <line x1="50" y1="0" x2="50" y2="300" stroke="#171717" stroke-width="4" />
+    <line x1="50" y1="0" x2="50" y2="150" stroke="#39FF14" stroke-width="4" />
+    
+    <!-- Phase 1 -->
+    <circle cx="50" cy="0" r="16" fill="#39FF14" />
+    <circle cx="50" cy="0" r="6" fill="#000000" />
+    <text x="100" y="10" class="story-font" font-weight="700" font-size="30" fill="#FFFFFF">UX Wireframing</text>
+    <text x="100" y="44" class="story-font" font-weight="500" font-size="20" fill="#555555">Fase 1 &bull; Listo</text>
+    
+    <!-- Phase 2 -->
+    <circle cx="50" cy="150" r="16" fill="#39FF14" />
+    <circle cx="50" cy="150" r="6" fill="#000000" />
+    <text x="100" y="160" class="story-font" font-weight="700" font-size="30" fill="#FFFFFF">Arquitectura y Stack</text>
+    <text x="100" y="194" class="story-font" font-weight="500" font-size="20" fill="#39FF14">Fase 2 &bull; En Curso</text>
+    
+    <!-- Phase 3 -->
+    <circle cx="50" cy="300" r="12" fill="#171717" stroke="#333333" stroke-width="3" />
+    <text x="100" y="310" class="story-font" font-weight="700" font-size="30" fill="#888888">Sprint Desarrollo</text>
+    <text x="100" y="344" class="story-font" font-weight="500" font-size="20" fill="#555555">Fase 3 &bull; Siguiente</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    diseno: {
+      title: 'Diseño UX/UI',
+      desc: 'Modelado visual interactivo, wireframing de alta fidelidad y diseño premium.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">03 — DISEÑO UX/UI</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Creamos experiencias</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">digitales modernas:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Diseño atractivo</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Facilidad de uso</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Identidad de marca</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Cada detalle está pensado meticulosamente</tspan>
+      <tspan x="0" dy="50">para la interacción del usuario final.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Dashboard UI Mockup -->
+  <g transform="translate(180, 1180)">
+    <!-- Card container -->
+    <rect x="0" y="0" width="720" height="320" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+    
+    <!-- Avatar and lines -->
+    <circle cx="60" cy="60" r="24" fill="#171717" />
+    <path d="M 52 68 C 52 60 56 56 60 56 C 64 56 68 60 68 68" fill="none" stroke="#888888" stroke-width="3" stroke-linecap="round" />
+    <circle cx="60" cy="48" r="8" fill="#888888" />
+    
+    <rect x="110" y="42" width="180" height="12" rx="6" fill="#FFFFFF" />
+    <rect x="110" y="64" width="100" height="8" rx="4" fill="#39FF14" />
+    
+    <!-- Three control window dots -->
+    <circle cx="660" cy="60" r="8" fill="#222" />
+    <circle cx="630" cy="60" r="8" fill="#222" />
+    
+    <line x1="30" y1="110" x2="690" y2="110" stroke="#171717" stroke-width="2" />
+    
+    <!-- Chart data -->
+    <text x="60" y="165" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">$4,820<tspan fill="#39FF14" font-size="22" font-weight="600">.90</tspan></text>
+    <text x="60" y="195" class="story-font" font-weight="500" font-size="18" fill="#555555">Rendimiento Mensual</text>
+    
+    <!-- Line chart graphic -->
+    <path d="M 360 210 Q 420 130 480 170 T 600 120 T 670 130" fill="none" stroke="#222222" stroke-width="4" stroke-linecap="round" />
+    <path d="M 360 210 Q 420 130 480 170 T 600 120" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" />
+    <circle cx="600" cy="120" r="8" fill="#39FF14" />
+    <circle cx="600" cy="120" r="18" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.4" />
+    
+    <!-- UI Pill elements -->
+    <rect x="60" y="240" width="130" height="44" rx="22" fill="#171717" stroke="#222222" stroke-width="1.5" />
+    <circle cx="85" cy="262" r="12" fill="#39FF14" />
+    <text x="135" y="269" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">UX</text>
+    
+    <rect x="210" y="240" width="130" height="44" rx="22" fill="none" stroke="#171717" stroke-width="1.5" />
+    <circle cx="235" cy="262" r="10" fill="#222" />
+    <text x="285" y="269" class="story-font" font-weight="700" font-size="18" fill="#555555">UI</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    desarrollo: {
+      title: 'Desarrollo',
+      desc: 'Programación a medida, optimización para SEO y desarrollo escalable con código limpio.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">04 — DESARROLLO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Convertimos diseño en</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">una solución funcional:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Rápidos</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Seguros</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Escalables</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Desarrollamos utilizando tecnologías modernas</tspan>
+      <tspan x="0" dy="50">y código limpio optimizado para SEO.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Code Mockup inside Editor -->
+  <g transform="translate(160, 1180)">
+    <!-- Editor Card -->
+    <rect x="0" y="0" width="760" height="320" rx="16" fill="#050505" stroke="#171717" stroke-width="3" />
+    
+    <!-- IDE Control dots -->
+    <circle cx="40" cy="35" r="8" fill="#FF5F56" />
+    <circle cx="70" cy="35" r="8" fill="#FFBD2E" />
+    <circle cx="100" cy="35" r="8" fill="#27C93F" />
+    <text x="140" y="42" class="story-font" font-weight="600" font-size="20" fill="#555555">App.tsx</text>
+    
+    <!-- IDE divider -->
+    <line x1="0" y1="70" x2="760" y2="70" stroke="#171717" stroke-width="2" />
+    
+    <!-- Syntax Highlighted Code -->
+    <g transform="translate(40, 120)">
+      <!-- Line 1 -->
+      <text class="story-font" font-weight="500" font-size="26" fill="#39FF14">import<tspan fill="#FFFFFF"> { </tspan>buildWebsite<tspan fill="#FFFFFF"> } </tspan>from<tspan fill="#39FF14"> '90plus'</tspan>;</text>
+      
+      <!-- Line 2 -->
+      <text y="50" class="story-font" font-weight="500" font-size="26" fill="#FFFFFF"><tspan fill="#39FF14">const</tspan> project = buildWebsite({</text>
+      
+      <!-- Line 3 -->
+      <text y="100" x="40" class="story-font" font-weight="500" font-size="26" fill="#888888">performance: <tspan fill="#39FF14">'maximum'</tspan>,</text>
+      
+      <!-- Line 4 -->
+      <text y="150" x="40" class="story-font" font-weight="500" font-size="26" fill="#888888">security: <tspan fill="#39FF14">true</tspan>,</text>
+      
+      <!-- Line 5 -->
+      <text y="200" x="40" class="story-font" font-weight="500" font-size="26" fill="#888888">scale: <tspan fill="#39FF14">'infinite'</tspan></text>
+      
+      <!-- Line 6 -->
+      <text y="250" class="story-font" font-weight="500" font-size="26" fill="#FFFFFF">});</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    lanzamiento: {
+      title: 'Lanzamiento',
+      desc: 'Configuración de dominios, despliegue continuo en producción e infraestructura en la nube.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">05 — LANZAMIENTO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Ponemos el proyecto online</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">configurando:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Dominio e infraestructura</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Integraciones y pasarelas</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Servicios necesarios</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Entregamos una solución lista para operar,</tspan>
+      <tspan x="0" dy="50">configurando dominios y servicios en la nube.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Cloud Deploy Node -->
+  <g transform="translate(240, 1180)">
+    <!-- Globe network background -->
+    <circle cx="300" cy="180" r="130" fill="none" stroke="#171717" stroke-width="3" />
+    <ellipse cx="300" cy="180" rx="50" ry="130" fill="none" stroke="#171717" stroke-width="3" />
+    <line x1="170" y1="180" x2="430" y2="180" stroke="#171717" stroke-width="3" />
+    
+    <!-- Uploading indicator arrow -->
+    <path d="M 300 220 L 300 100 M 300 100 L 270 130 M 300 100 L 330 130" fill="none" stroke="#39FF14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Environment Server Badge -->
+    <rect x="180" y="30" width="240" height="48" rx="8" fill="#111111" stroke="#39FF14" stroke-width="2" />
+    <circle cx="210" cy="54" r="8" fill="#39FF14" />
+    <text x="236" y="62" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">production.env</text>
+    
+    <line x1="300" y1="78" x2="300" y2="100" stroke="#39FF14" stroke-width="3" stroke-dasharray="4 4" />
+    
+    <!-- DEPLOY SUCCESSFUL toast -->
+    <rect x="160" y="290" width="280" height="48" rx="24" fill="#0D0D0D" stroke="#222" stroke-width="2" />
+    <circle cx="190" cy="314" r="8" fill="#39FF14" />
+    <text x="214" y="321" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF" letter-spacing="2">DEPLOY SUCCESS</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    evolucion: {
+      title: 'Evolución',
+      desc: 'Mantenimiento continuo, análisis de datos de usuario y optimización de conversión.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">06 — EVOLUCIÓN</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Un proyecto digital no</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">termina en el lanzamiento:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Mejoras y optimización</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Nuevas funcionalidades</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Soporte técnico continuo</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Acompañamos el crecimiento de tu solución</tspan>
+      <tspan x="0" dy="50">analizando datos y mejorando conversiones.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Growth Chart -->
+  <g transform="translate(180, 1180)">
+    <!-- Graph Axes -->
+    <line x1="40" y1="280" x2="680" y2="280" stroke="#171717" stroke-width="3" stroke-linecap="round" />
+    <line x1="40" y1="40" x2="40" y2="280" stroke="#171717" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Grid dashed lines -->
+    <line x1="40" y1="200" x2="680" y2="200" stroke="#111" stroke-width="1.5" stroke-dasharray="8 8" />
+    <line x1="40" y1="120" x2="680" y2="120" stroke="#111" stroke-width="1.5" stroke-dasharray="8 8" />
+    <line x1="40" y1="40" x2="680" y2="40" stroke="#111" stroke-width="1.5" stroke-dasharray="8 8" />
+    
+    <!-- Ascending curve path -->
+    <path d="M 40 240 Q 180 220 300 140 T 540 70 T 680 40" fill="none" stroke="#39FF14" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Circles at points -->
+    <circle cx="40" cy="240" r="8" fill="#39FF14" />
+    <circle cx="300" cy="140" r="8" fill="#39FF14" />
+    <circle cx="540" cy="70" r="8" fill="#39FF14" />
+    <circle cx="680" cy="40" r="10" fill="#39FF14" />
+    <!-- Pulse glow circle -->
+    <circle cx="680" cy="40" r="20" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.5" />
+    
+    <!-- Accent rate bubble -->
+    <rect x="530" y="110" width="120" height="40" rx="8" fill="#111111" stroke="#39FF14" stroke-width="2" />
+    <text x="590" y="136" class="story-font" font-weight="700" font-size="20" fill="#39FF14" text-anchor="middle">+90%</text>
+    
+    <!-- Labels -->
+    <text x="40" y="310" class="story-font" font-weight="600" font-size="18" fill="#555555" text-anchor="middle">Lanzar</text>
+    <text x="300" y="310" class="story-font" font-weight="600" font-size="18" fill="#555555" text-anchor="middle">Mes 3</text>
+    <text x="540" y="310" class="story-font" font-weight="600" font-size="18" fill="#555555" text-anchor="middle">Mes 6</text>
+    <text x="680" y="310" class="story-font" font-weight="600" font-size="18" fill="#39FF14" text-anchor="middle">Evolución</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    },
+    cierre: {
+      title: 'Cierre',
+      desc: 'Cierre premium de la serie con logotipo y dirección web de la agencia.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Mini Title -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">07 — PROCESO DE TRABAJO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Llevemos tu idea al</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">siguiente nivel:</text>
+  </g>
+
+  <!-- Paragraph Description -->
+  <g transform="translate(120, 750)">
+    <text class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Diseño sofisticado, desarrollo impecable y una</tspan>
+      <tspan x="0" dy="50">metodología transparente diseñada para tu éxito.</tspan>
+    </text>
+  </g>
+
+  <!-- Interactive Call-To-Action Card Mockup -->
+  <g transform="translate(180, 960)">
+    <!-- Background Card -->
+    <rect x="0" y="0" width="720" height="340" rx="20" fill="#050505" stroke="#171717" stroke-width="3" />
+    
+    <!-- Pulse badge in card header -->
+    <rect x="220" y="40" width="280" height="48" rx="24" fill="#0F0F0F" stroke="#39FF14" stroke-width="2" />
+    <circle cx="255" cy="64" r="8" fill="#39FF14" />
+    <text x="380" y="71" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">PROYECTOS ACTIVOS</text>
+    
+    <!-- Meeting Slot info -->
+    <text x="360" y="150" class="story-font" font-weight="800" font-size="36" fill="#FFFFFF" text-anchor="middle">¿Comenzamos a conversar?</text>
+    <text x="360" y="195" class="story-font" font-weight="500" font-size="24" fill="#555555" text-anchor="middle">Agendá una llamada de 15 minutos</text>
+
+    <!-- Simulated CTA Button -->
+    <g transform="translate(140, 230)">
+      <rect x="0" y="0" width="440" height="72" rx="36" fill="#39FF14" />
+      <text x="220" y="44" class="story-font" font-weight="800" font-size="22" fill="#000000" text-anchor="middle" letter-spacing="2">ESCRIBINOS AHORA →</text>
+    </g>
+  </g>
+
+  <!-- Footer Link and Branding -->
+  <g transform="translate(120, 1460)">
+    <line x1="0" y1="0" x2="840" y2="0" stroke="#171717" stroke-width="2" />
+    <text y="50" class="story-font" font-weight="400" font-size="28" fill="#555555">Visita nuestro sitio para conocer más</text>
+    <text x="840" y="50" class="story-font" font-weight="700" font-size="28" fill="#39FF14" text-anchor="end">90plus.studio</text>
+  </g>
+
+  <!-- Footer Info -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    }
   }
 };
 
 // 9. INSTAGRAM STORIES CONTROLLER
+let activePackKey = 'identity';
 let activeStoryKey = 'servicios';
 
 function updateStoryRender() {
@@ -918,41 +1676,79 @@ function updateStoryRender() {
   const descEl = document.getElementById('story-meta-desc');
   if (!container || !titleEl || !descEl) return;
   
-  const data = storiesDatabase[activeStoryKey];
+  const data = storiesDatabase[activePackKey][activeStoryKey];
   container.innerHTML = data.svg;
   titleEl.textContent = data.title;
   descEl.textContent = data.desc;
 }
 
+function renderStoryTabs() {
+  const container = document.getElementById('story-tabs-container');
+  if (!container) return;
+  
+  container.innerHTML = '';
+  const packStories = storiesDatabase[activePackKey];
+  
+  let isFirst = true;
+  Object.keys(packStories).forEach((key, index) => {
+    const data = packStories[key];
+    const button = document.createElement('button');
+    button.className = `story-tab${isFirst ? ' active' : ''}`;
+    button.dataset.story = key;
+    
+    const num = String(index).padStart(2, '0');
+    button.innerHTML = `
+      <span class="tab-num">${num}</span>
+      <span class="tab-name">${data.title}</span>
+    `;
+    
+    if (isFirst) {
+      activeStoryKey = key;
+      isFirst = false;
+    }
+    
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.story-tab').forEach(t => t.classList.remove('active'));
+      button.classList.add('active');
+      activeStoryKey = key;
+      updateStoryRender();
+    });
+    
+    container.appendChild(button);
+  });
+  
+  updateStoryRender();
+}
+
 function initInstagramStories() {
-  const tabs = document.querySelectorAll('.story-tab');
+  const packTabs = document.querySelectorAll('.pack-tab');
   const btnSvg = document.getElementById('btn-download-story-svg');
   const btnPng = document.getElementById('btn-download-story-png');
   
-  if (!tabs.length) return;
+  // Set initial tabs rendering
+  renderStoryTabs();
   
-  // Set initial render
-  updateStoryRender();
-  
-  // Tab Switching
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      activeStoryKey = tab.dataset.story;
-      updateStoryRender();
+  // Pack Switching
+  if (packTabs.length) {
+    packTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        packTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        activePackKey = tab.dataset.pack;
+        renderStoryTabs();
+      });
     });
-  });
+  }
   
   // Download SVG
   if (btnSvg) {
     btnSvg.addEventListener('click', () => {
-      const data = storiesDatabase[activeStoryKey];
+      const data = storiesDatabase[activePackKey][activeStoryKey];
       const blob = new Blob([data.svg], { type: 'image/svg+xml;charset=utf-8' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `90plus_story_${activeStoryKey}.svg`;
+      a.download = `90plus_story_${activePackKey}_${activeStoryKey}.svg`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -963,7 +1759,7 @@ function initInstagramStories() {
   // Download PNG HD (1080x1920)
   if (btnPng) {
     btnPng.addEventListener('click', () => {
-      const data = storiesDatabase[activeStoryKey];
+      const data = storiesDatabase[activePackKey][activeStoryKey];
       const canvas = document.getElementById('export-canvas');
       if (!canvas) return;
       const ctx = canvas.getContext('2d');
@@ -985,7 +1781,7 @@ function initInstagramStories() {
           const pngUrl = URL.createObjectURL(pngBlob);
           const a = document.createElement('a');
           a.href = pngUrl;
-          a.download = `90plus_story_${activeStoryKey}_hd.png`;
+          a.download = `90plus_story_${activePackKey}_${activeStoryKey}_hd.png`;
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);

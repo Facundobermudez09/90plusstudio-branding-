@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">01 — DESCUBRIMIENTO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Antes de desarrollar,</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">analizamos:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">El negocio</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Los objetivos</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">El público</text>
+
+    <!-- Point 4 -->
+    <rect x="0" y="210" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="230" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Las necesidades del proyecto</text>
+
+    <!-- Paragraph -->
+    <text y="380" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Creamos una base sólida para tomar mejores</tspan>
+      <tspan x="0" dy="50">decisiones estratégicas y técnicas.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Node Graph -->
+  <g transform="translate(540, 1420)">
+    <!-- Connections -->
+    <line x1="-160" y1="50" x2="-60" y2="-60" stroke="#222222" stroke-width="3" />
+    <line x1="-60" y1="-60" x2="110" y2="-110" stroke="#222222" stroke-width="3" />
+    <line x1="-60" y1="-60" x2="60" y2="110" stroke="#222222" stroke-width="3" />
+    <line x1="110" y1="-110" x2="220" y2="0" stroke="#222222" stroke-width="3" />
+    <line x1="60" y1="110" x2="220" y2="0" stroke="#222222" stroke-width="3" />
+    <line x1="-160" y1="50" x2="60" y2="110" stroke="#222222" stroke-width="3" />
+    
+    <!-- Dots -->
+    <circle cx="-160" cy="50" r="14" fill="#FFFFFF" />
+    <circle cx="-60" cy="-60" r="14" fill="#FFFFFF" />
+    <circle cx="110" cy="-110" r="14" fill="#FFFFFF" />
+    <circle cx="60" cy="110" r="14" fill="#FFFFFF" />
+    <circle cx="220" cy="0" r="18" fill="#39FF14" />
+    
+    <!-- Outer accent rings -->
+    <circle cx="220" cy="0" r="32" fill="none" stroke="#39FF14" stroke-width="2" stroke-dasharray="6 6" />
+
+    <!-- Text descriptors -->
+    <text x="-160" y="100" class="story-font" font-weight="600" font-size="20" fill="#555555" text-anchor="middle">Negocio</text>
+    <text x="-60" y="-95" class="story-font" font-weight="600" font-size="20" fill="#555555" text-anchor="middle">Objetivos</text>
+    <text x="110" y="-145" class="story-font" font-weight="600" font-size="20" fill="#555555" text-anchor="middle">Público</text>
+    <text x="60" y="155" class="story-font" font-weight="600" font-size="20" fill="#555555" text-anchor="middle">Proyecto</text>
+    <text x="220" y="-45" class="story-font" font-weight="800" font-size="22" fill="#39FF14" text-anchor="middle">BASE</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>

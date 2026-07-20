@@ -1383,6 +1383,38 @@ body {
   gap: 24px;
 }
 
+.pack-selector-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.pack-tab {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pack-tab:hover {
+  border-color: #444;
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.pack-tab.active {
+  border-color: var(--brand-green);
+  color: var(--text-primary);
+  background-color: rgba(57, 255, 20, 0.05);
+  box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.05);
+}
+
 .story-selector-tabs {
   display: flex;
   flex-direction: column;

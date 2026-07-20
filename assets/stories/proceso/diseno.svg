@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">03 — DISEÑO UX/UI</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Creamos experiencias</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">digitales modernas:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 780)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Diseño atractivo</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Facilidad de uso</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Identidad de marca</text>
+
+    <!-- Paragraph -->
+    <text y="290" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Cada detalle está pensado meticulosamente</tspan>
+      <tspan x="0" dy="50">para la interacción del usuario final.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Dashboard UI Mockup -->
+  <g transform="translate(180, 1180)">
+    <!-- Card container -->
+    <rect x="0" y="0" width="720" height="320" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+    
+    <!-- Avatar and lines -->
+    <circle cx="60" cy="60" r="24" fill="#171717" />
+    <path d="M 52 68 C 52 60 56 56 60 56 C 64 56 68 60 68 68" fill="none" stroke="#888888" stroke-width="3" stroke-linecap="round" />
+    <circle cx="60" cy="48" r="8" fill="#888888" />
+    
+    <rect x="110" y="42" width="180" height="12" rx="6" fill="#FFFFFF" />
+    <rect x="110" y="64" width="100" height="8" rx="4" fill="#39FF14" />
+    
+    <!-- Three control window dots -->
+    <circle cx="660" cy="60" r="8" fill="#222" />
+    <circle cx="630" cy="60" r="8" fill="#222" />
+    
+    <line x1="30" y1="110" x2="690" y2="110" stroke="#171717" stroke-width="2" />
+    
+    <!-- Chart data -->
+    <text x="60" y="165" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">$4,820<tspan fill="#39FF14" font-size="22" font-weight="600">.90</tspan></text>
+    <text x="60" y="195" class="story-font" font-weight="500" font-size="18" fill="#555555">Rendimiento Mensual</text>
+    
+    <!-- Line chart graphic -->
+    <path d="M 360 210 Q 420 130 480 170 T 600 120 T 670 130" fill="none" stroke="#222222" stroke-width="4" stroke-linecap="round" />
+    <path d="M 360 210 Q 420 130 480 170 T 600 120" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round" />
+    <circle cx="600" cy="120" r="8" fill="#39FF14" />
+    <circle cx="600" cy="120" r="18" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.4" />
+    
+    <!-- UI Pill elements -->
+    <rect x="60" y="240" width="130" height="44" rx="22" fill="#171717" stroke="#222222" stroke-width="1.5" />
+    <circle cx="85" cy="262" r="12" fill="#39FF14" />
+    <text x="135" y="269" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">UX</text>
+    
+    <rect x="210" y="240" width="130" height="44" rx="22" fill="none" stroke="#171717" stroke-width="1.5" />
+    <circle cx="235" cy="262" r="10" fill="#222" />
+    <text x="285" y="269" class="story-font" font-weight="700" font-size="18" fill="#555555">UI</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>

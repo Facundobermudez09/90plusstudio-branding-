@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  
+  <!-- Grid -->
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Margins -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — PLANIFICACIÓN</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Definimos:</text>
+  </g>
+
+  <!-- Bullet Points -->
+  <g transform="translate(120, 680)">
+    <!-- Point 1 -->
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="20" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Estructura del proyecto</text>
+    
+    <!-- Point 2 -->
+    <rect x="0" y="70" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="90" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Funcionalidades</text>
+
+    <!-- Point 3 -->
+    <rect x="0" y="140" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="160" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Tecnología</text>
+
+    <!-- Point 4 -->
+    <rect x="0" y="210" width="20" height="20" rx="4" fill="#39FF14" />
+    <text x="50" y="230" class="story-font" font-weight="700" font-size="36" fill="#FFFFFF">Tiempos de trabajo</text>
+
+    <!-- Paragraph -->
+    <text y="380" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Organizamos meticulosamente cada etapa</tspan>
+      <tspan x="0" dy="50">y entregable antes de escribir código.</tspan>
+    </text>
+  </g>
+
+  <!-- Visual Element: Roadmap Gantt -->
+  <g transform="translate(240, 1180)">
+    <!-- Timeline Vertical Line -->
+    <line x1="50" y1="0" x2="50" y2="300" stroke="#171717" stroke-width="4" />
+    <line x1="50" y1="0" x2="50" y2="150" stroke="#39FF14" stroke-width="4" />
+    
+    <!-- Phase 1 -->
+    <circle cx="50" cy="0" r="16" fill="#39FF14" />
+    <circle cx="50" cy="0" r="6" fill="#000000" />
+    <text x="100" y="10" class="story-font" font-weight="700" font-size="30" fill="#FFFFFF">UX Wireframing</text>
+    <text x="100" y="44" class="story-font" font-weight="500" font-size="20" fill="#555555">Fase 1 &bull; Listo</text>
+    
+    <!-- Phase 2 -->
+    <circle cx="50" cy="150" r="16" fill="#39FF14" />
+    <circle cx="50" cy="150" r="6" fill="#000000" />
+    <text x="100" y="160" class="story-font" font-weight="700" font-size="30" fill="#FFFFFF">Arquitectura y Stack</text>
+    <text x="100" y="194" class="story-font" font-weight="500" font-size="20" fill="#39FF14">Fase 2 &bull; En Curso</text>
+    
+    <!-- Phase 3 -->
+    <circle cx="50" cy="300" r="12" fill="#171717" stroke="#333333" stroke-width="3" />
+    <text x="100" y="310" class="story-font" font-weight="700" font-size="30" fill="#888888">Sprint Desarrollo</text>
+    <text x="100" y="344" class="story-font" font-weight="500" font-size="20" fill="#555555">Fase 3 &bull; Siguiente</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>
