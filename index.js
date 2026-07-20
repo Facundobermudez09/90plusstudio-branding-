@@ -567,8 +567,9 @@ dom.btnDownloadPng.addEventListener('click', () => {
   }
   
   // Draw SVG image to canvas
+  const cleanSvg = svgContent.replace(/@import\s+url\([^)]+\);/g, '');
   const img = new Image();
-  const blob = new Blob([svgContent], { type: 'image/svg+xml;charset=utf-8' });
+  const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   
   img.onload = function() {
@@ -701,8 +702,9 @@ function initInstagramHighlights() {
       
       ctx.clearRect(0, 0, size, size);
       
+      const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '');
       const img = new Image();
-      const blob = new Blob([data.svg], { type: 'image/svg+xml;charset=utf-8' });
+      const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
       const url = URL.createObjectURL(blob);
       
       img.onload = function() {
@@ -1771,8 +1773,9 @@ function initInstagramStories() {
       
       ctx.clearRect(0, 0, width, height);
       
+      const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '');
       const img = new Image();
-      const blob = new Blob([data.svg], { type: 'image/svg+xml;charset=utf-8' });
+      const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
       const url = URL.createObjectURL(blob);
       
       img.onload = function() {
