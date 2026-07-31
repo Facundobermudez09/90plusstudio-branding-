@@ -1656,12 +1656,537 @@ const storiesDatabase = {
   <g transform="translate(120, 1460)">
     <line x1="0" y1="0" x2="840" y2="0" stroke="#171717" stroke-width="2" />
     <text y="50" class="story-font" font-weight="400" font-size="28" fill="#555555">Visita nuestro sitio para conocer más</text>
-    <text x="840" y="50" class="story-font" font-weight="700" font-size="28" fill="#39FF14" text-anchor="end">90plus.studio</text>
+    <text x="840" y="50" class="story-font" font-weight="700" font-size="28" fill="#39FF14" text-anchor="end">90plus.studio_</text>
   </g>
 
   <!-- Footer Info -->
   <g transform="translate(540, 1790)">
     <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; METODOLOGÍA</text>
+  </g>
+</svg>`
+    }
+  },
+  faq: {
+    portada: {
+      title: 'Portada',
+      desc: 'Portada oficial de la sección de Preguntas Frecuentes.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .story-font { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
+    <text y="240" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Respondemos las consultas más comunes</tspan>
+      <tspan x="0" dy="48">antes de comenzar un proyecto.</tspan>
+    </text>
+    <g transform="translate(0, 480)">
+      <line x1="0" y1="0" x2="160" y2="0" stroke="#39FF14" stroke-width="4"/>
+      <text y="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
+        <tspan x="0" dy="0">Todo lo que</tspan>
+        <tspan x="0" dy="64">necesitás saber.</tspan>
+      </text>
+    </g>
+  </g>
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">DESLIZÁ PARA CONOCER MÁS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>`
+    },
+    proceso: {
+      title: 'Proceso de trabajo',
+      desc: 'Metodología sin intermediarios, alineación inicial y sprints semanales.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-p" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-p)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">01 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Cómo es el proceso</tspan>
+      <tspan x="0" dy="68">de trabajo?</tspan>
+    </text>
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      <circle cx="60" cy="60" r="16" fill="#39FF14" />
+      <text x="96" y="68" class="story-font" font-weight="700" font-size="22" fill="#39FF14" letter-spacing="2">METODOLOGÍA DE TRABAJO</text>
+      <text x="60" y="150" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
+        <tspan x="60" dy="0">Trabajamos sin intermediarios.</tspan>
+        <tspan x="60" dy="54">Iniciamos con una sesión de</tspan>
+        <tspan x="60" dy="54">alineación estratégica para definir</tspan>
+        <tspan x="60" dy="54">alcances y arquitectura.</tspan>
+        <tspan x="60" dy="80">Luego ejecutamos en sprints</tspan>
+        <tspan x="60" dy="54">semanales con entregables</tspan>
+        <tspan x="60" dy="54">visibles y comunicación constante.</tspan>
+      </text>
+      <g transform="translate(60, 540)">
+        <rect x="0" y="0" width="280" height="48" rx="24" fill="#141414" stroke="#262626" stroke-width="2" />
+        <circle cx="28" cy="24" r="6" fill="#39FF14" />
+        <text x="46" y="31" class="story-font" font-weight="700" font-size="16" fill="#FFFFFF" letter-spacing="2">SPRINTS SEMANALES</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    },
+    propiedad: {
+      title: 'Propiedad del código',
+      desc: 'Confirmación de propiedad al 100% para el cliente.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-pr" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-pr)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Quién es el dueño</tspan>
+      <tspan x="0" dy="68">del código fuente?</tspan>
+    </text>
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      <rect x="60" y="50" width="340" height="54" rx="27" fill="#112911" stroke="#39FF14" stroke-width="2" />
+      <circle cx="90" cy="77" r="8" fill="#39FF14" />
+      <text x="112" y="84" class="story-font" font-weight="800" font-size="20" fill="#39FF14" letter-spacing="2">100% PROPIEDAD TUYA</text>
+      <text x="60" y="170" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
+        <tspan x="60" dy="0">El cliente es el único dueño del 100%</tspan>
+        <tspan x="60" dy="54">del código fuente, repositorios, bases</tspan>
+        <tspan x="60" dy="54">de datos e infraestructura una vez</tspan>
+        <tspan x="60" dy="54">finalizado el proyecto.</tspan>
+        <tspan x="60" dy="80">Entregamos todo configurado</tspan>
+        <tspan x="60" dy="54">y listo para producción.</tspan>
+      </text>
+      <g transform="translate(60, 520)">
+        <rect x="0" y="0" width="220" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="110" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">REPOSITORIO</text>
+        <rect x="240" y="0" width="220" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="350" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">BASE DE DATOS</text>
+        <rect x="480" y="0" width="240" height="70" rx="14" fill="#141414" stroke="#39FF14" stroke-width="2" />
+        <text x="600" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#39FF14">INFRAESTRUCTURA</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    },
+    tecnologia: {
+      title: 'Tecnologías',
+      desc: 'Stack técnico utilizado: Next.js, React, TypeScript, Node.js e IA.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-t" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-t)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">03 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Qué tecnologías</tspan>
+      <tspan x="0" dy="68">utilizan para construir?</tspan>
+    </text>
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="740" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      <text x="50" y="60" class="story-font" font-weight="400" font-size="28" fill="#888888">Stack moderno de alto rendimiento y escalabilidad:</text>
+      <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Next.js</text>
+        <rect x="255" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="370" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">React</text>
+        <rect x="510" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="625" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">TypeScript</text>
+        <rect x="0" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Node.js</text>
+        <rect x="255" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="370" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">PostgreSQL</text>
+        <rect x="510" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="625" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Supabase</text>
+        <rect x="0" y="180" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="222" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Redis</text>
+        <rect x="255" y="180" width="485" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="497" y="222" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">TailwindCSS</text>
+      </g>
+      <g transform="translate(50, 400)">
+        <rect x="0" y="0" width="740" height="280" rx="20" fill="#0D1F0D" stroke="#39FF14" stroke-width="2" />
+        <circle cx="50" cy="50" r="12" fill="#39FF14" />
+        <text x="80" y="58" class="story-font" font-weight="800" font-size="22" fill="#39FF14" letter-spacing="2">INTEGRACIÓN DE INTELIGENCIA ARTIFICIAL</text>
+        <text x="50" y="130" class="story-font" font-weight="400" font-size="30" fill="#FFFFFF" xml:space="preserve">
+          <tspan x="50" dy="0">Conectamos modelos de IA avanzados</tspan>
+          <tspan x="50" dy="50">(OpenAI / Anthropic APIs) para potenciar</tspan>
+          <tspan x="50" dy="50">tus flujos de trabajo y automatizaciones.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    },
+    tiempos: {
+      title: 'Tiempos de desarrollo',
+      desc: 'Estimación de 2 a 4 semanas para desarrollos estándar.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-ti" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-ti)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">04 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Cuáles son los tiempos</tspan>
+      <tspan x="0" dy="68">estimados de desarrollo?</tspan>
+    </text>
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      <g transform="translate(60, 50)">
+        <rect x="0" y="0" width="360" height="54" rx="27" fill="#141414" stroke="#262626" stroke-width="2" />
+        <circle cx="28" cy="27" r="8" fill="#39FF14" />
+        <text x="50" y="34" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="2">TIEMPOS ESTIMADOS</text>
+      </g>
+      <text x="60" y="170" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
+        <tspan x="60" dy="0">Los proyectos estándar (landing pages,</tspan>
+        <tspan x="60" dy="54">sitios institucionales o web apps</tspan>
+        <tspan x="60" dy="54">iniciales) toman entre 2 y 4 semanas.</tspan>
+        <tspan x="60" dy="80">Proyectos más complejos o sistemas</tspan>
+        <tspan x="60" dy="54">a medida se estiman según el alcance</tspan>
+        <tspan x="60" dy="54">definido en la fase inicial.</tspan>
+      </text>
+      <g transform="translate(60, 520)">
+        <rect x="0" y="0" width="720" height="80" rx="16" fill="#111111" stroke="#39FF14" stroke-width="2" />
+        <text x="40" y="48" class="story-font" font-weight="800" font-size="28" fill="#39FF14">2 A 4 SEMANAS</text>
+        <text x="680" y="48" text-anchor="end" class="story-font" font-weight="600" font-size="22" fill="#888888">Desarrollo Estándar</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    },
+    soporte: {
+      title: 'Soporte y mantenimiento',
+      desc: 'Planes post-lanzamiento, monitoreo 24/7 y seguridad.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-s" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-s)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">05 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Ofrecen soporte y</tspan>
+      <tspan x="0" dy="68">mantenimiento continuo?</tspan>
+    </text>
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      <circle cx="60" cy="60" r="16" fill="#39FF14" />
+      <text x="96" y="68" class="story-font" font-weight="700" font-size="22" fill="#39FF14" letter-spacing="2">SOPORTE POST-LANZAMIENTO</text>
+      <text x="60" y="160" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
+        <tspan x="60" dy="0">Sí. Ofrecemos planes de soporte</tspan>
+        <tspan x="60" dy="54">continuo, monitoreo de disponibilidad,</tspan>
+        <tspan x="60" dy="54">actualizaciones de seguridad y</tspan>
+        <tspan x="60" dy="54">optimización constante tras el</tspan>
+        <tspan x="60" dy="54">lanzamiento oficial de tu producto.</tspan>
+      </text>
+      <g transform="translate(60, 480)">
+        <rect x="0" y="0" width="340" height="60" rx="12" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="170" y="38" text-anchor="middle" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Monitoreo 24/7</text>
+        <rect x="360" y="0" width="360" height="60" rx="12" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="540" y="38" text-anchor="middle" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Seguridad &amp; Updates</text>
+        <rect x="0" y="75" width="720" height="60" rx="12" fill="#0D1F0D" stroke="#39FF14" stroke-width="2" />
+        <text x="360" y="113" text-anchor="middle" class="story-font" font-weight="700" font-size="20" fill="#39FF14">Optimización &amp; Evolución Continua</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    },
+    cierre: {
+      title: 'Cierre',
+      desc: 'Invitación a resolver consultas personalizadas.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-c" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-c)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">06 — PREGUNTAS FRECUENTES</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">¿Tenés otra consulta?</text>
+  </g>
+  <g transform="translate(120, 700)">
+    <text class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Cada proyecto es único. Escribinos para</tspan>
+      <tspan x="0" dy="50">analizar tu idea en detalle y responder</tspan>
+      <tspan x="0" dy="50">todas tus inquietudes.</tspan>
+    </text>
+  </g>
+  <g transform="translate(180, 960)">
+    <rect x="0" y="0" width="720" height="340" rx="20" fill="#050505" stroke="#171717" stroke-width="3" />
+    <rect x="170" y="40" width="380" height="52" rx="26" fill="#0F0F0F" stroke="#39FF14" stroke-width="2" />
+    <circle cx="205" cy="66" r="8" fill="#39FF14" />
+    <text x="385" y="73" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ASESORAMIENTO DIRECTO</text>
+    <text x="360" y="150" class="story-font" font-weight="800" font-size="36" fill="#FFFFFF" text-anchor="middle">¿Conversamos?</text>
+    <text x="360" y="195" class="story-font" font-weight="500" font-size="24" fill="#555555" text-anchor="middle">Despejá tus dudas con nuestro equipo</text>
+    <g transform="translate(140, 230)">
+      <rect x="0" y="0" width="440" height="72" rx="36" fill="#39FF14" />
+      <text x="220" y="44" class="story-font" font-weight="800" font-size="22" fill="#000000" text-anchor="middle" letter-spacing="2">ENVIAR MENSAJE →</text>
+    </g>
+  </g>
+  <g transform="translate(120, 1460)">
+    <line x1="0" y1="0" x2="840" y2="0" stroke="#171717" stroke-width="2" />
+    <text y="50" class="story-font" font-weight="400" font-size="28" fill="#555555">Visita nuestro portal oficial</text>
+    <text x="840" y="50" class="story-font" font-weight="700" font-size="28" fill="#39FF14" text-anchor="end">90plusstudio.com.ar</text>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>`
+    }
+  },
+  contacto: {
+    portada: {
+      title: 'Portada',
+      desc: 'Portada oficial de la sección de Contacto.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .story-font { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="#0A0A0A"/>
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Contacto<tspan fill="#39FF14">.</tspan></text>
+    <text y="120" class="story-font" font-weight="400" font-size="32" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Tenés una idea o un proyecto?</tspan>
+      <tspan x="0" dy="54">Nos encantaría conocerlo y ayudarte</tspan>
+      <tspan x="0" dy="48">a hacerlo realidad.</tspan>
+    </text>
+  </g>
+  <g transform="translate(540, 1720)">
+    <text text-anchor="middle" class="story-font" font-weight="600" font-size="24" letter-spacing="6" fill="#FFFFFF">ESCRIBINOS Y CONVERSEMOS <tspan fill="#39FF14">→</tspan></text>
+  </g>
+</svg>`
+    },
+    canales: {
+      title: 'Canales directos',
+      desc: 'Contactos directos vía Web, Instagram y WhatsApp de Luciano y Facundo.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-ct-c" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-ct-c)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 420)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">01 — CANALES DIRECTOS</text>
+    <text y="90" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF">Hablemos directamente<tspan fill="#39FF14">.</tspan></text>
+    <g transform="translate(0, 150)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <rect x="48" y="50" width="24" height="18" rx="3" fill="none" stroke="#39FF14" stroke-width="2" />
+        <path d="M 48 52 L 60 62 L 72 52" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">CORREO ELECTRÓNICO</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">team90plusstudio@gmail.com</text>
+      </g>
+      <g transform="translate(0, 140)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <circle cx="60" cy="60" r="11" fill="none" stroke="#39FF14" stroke-width="2.5" />
+        <ellipse cx="60" cy="60" rx="4.5" ry="11" fill="none" stroke="#39FF14" stroke-width="2" />
+        <line x1="49" y1="60" x2="71" y2="60" stroke="#39FF14" stroke-width="2" />
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">PÁGINA WEB OFICIAL</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">90plusstudio.com.ar</text>
+      </g>
+      <g transform="translate(0, 280)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <rect x="48" y="48" width="24" height="24" rx="6" fill="none" stroke="#39FF14" stroke-width="2.5" />
+        <circle cx="60" cy="60" r="5.5" fill="none" stroke="#39FF14" stroke-width="2" />
+        <circle cx="66" cy="54" r="1.5" fill="#39FF14" />
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">INSTAGRAM</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">@90plusstudio_</text>
+      </g>
+      <g transform="translate(0, 420)">
+        <rect x="0" y="0" width="840" height="350" rx="24" fill="#0A0A0A" stroke="#1D381D" stroke-width="3" />
+        <rect x="45" y="30" width="290" height="42" rx="21" fill="#112911" stroke="#39FF14" stroke-width="1.5" />
+        <circle cx="68" cy="51" r="5" fill="#39FF14" />
+        <text x="86" y="57" class="story-font" font-weight="800" font-size="16" fill="#39FF14" letter-spacing="2">WHATSAPP DIRECTO</text>
+        <g transform="translate(45, 95)">
+          <rect x="0" y="0" width="750" height="95" rx="16" fill="#111111" stroke="#222" stroke-width="2" />
+          <circle cx="45" cy="47.5" r="20" fill="#191919" />
+          <text x="45" y="54.5" text-anchor="middle" class="story-font" font-weight="800" font-size="18" fill="#39FF14">L</text>
+          <text x="85" y="40" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Luciano</text>
+          <text x="85" y="68" class="story-font" font-weight="500" font-size="22" fill="#888888">+54 9 264 565-0131</text>
+        </g>
+        <g transform="translate(45, 210)">
+          <rect x="0" y="0" width="750" height="95" rx="16" fill="#111111" stroke="#222" stroke-width="2" />
+          <circle cx="45" cy="47.5" r="20" fill="#191919" />
+          <text x="45" y="54.5" text-anchor="middle" class="story-font" font-weight="800" font-size="20" fill="#39FF14">F</text>
+          <text x="85" y="40" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Facundo</text>
+          <text x="85" y="68" class="story-font" font-weight="500" font-size="22" fill="#888888">+54 9 264 561-4261</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; CANALES DE CONTACTO</text>
+  </g>
+</svg>`
+    },
+    cierre: {
+      title: 'Iniciar proyecto',
+      desc: 'Llamado a la acción final para agendar reunión o consulta.',
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-ct-ci" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-ct-ci)" opacity="0.6" />
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+  <g transform="translate(120, 480)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — INICIEMOS UN PROYECTO</text>
+    <text y="100" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">Transformemos tu idea</text>
+    <text y="180" class="story-font" font-weight="800" font-size="64" letter-spacing="-2" fill="#FFFFFF">en software real:</text>
+  </g>
+  <g transform="translate(120, 780)">
+    <text class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+      <tspan x="0" dy="0">Ponete en contacto con nuestro equipo</tspan>
+      <tspan x="0" dy="50">y agendemos una reunión inicial para</tspan>
+      <tspan x="0" dy="50">definir tu estrategia digital.</tspan>
+    </text>
+  </g>
+  <g transform="translate(180, 1020)">
+    <rect x="0" y="0" width="720" height="340" rx="20" fill="#050505" stroke="#171717" stroke-width="3" />
+    <rect x="220" y="40" width="280" height="48" rx="24" fill="#0F0F0F" stroke="#39FF14" stroke-width="2" />
+    <circle cx="255" cy="64" r="8" fill="#39FF14" />
+    <text x="380" y="71" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">AGENDA ABIERTA</text>
+    <text x="360" y="150" class="story-font" font-weight="800" font-size="34" fill="#FFFFFF" text-anchor="middle">90plusstudio.com.ar</text>
+    <text x="360" y="195" class="story-font" font-weight="500" font-size="22" fill="#555555" text-anchor="middle">Escribinos por WhatsApp o correo</text>
+    <g transform="translate(140, 230)">
+      <rect x="0" y="0" width="440" height="72" rx="36" fill="#39FF14" />
+      <text x="220" y="44" class="story-font" font-weight="800" font-size="22" fill="#000000" text-anchor="middle" letter-spacing="2">HABLAR POR WHATSAPP →</text>
+    </g>
+  </g>
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; CONTACTO DIRECTO</text>
   </g>
 </svg>`
     }
@@ -1682,6 +2207,70 @@ function updateStoryRender() {
   container.innerHTML = data.svg;
   titleEl.textContent = data.title;
   descEl.textContent = data.desc;
+
+  // Precomputar descargas de forma asíncrona preventiva para evitar bloqueos del navegador en clicks
+  const btnSvg = document.getElementById('btn-download-story-svg');
+  const btnPng = document.getElementById('btn-download-story-png');
+  
+  if (btnSvg) {
+    const cleanSvg = data.svg.replace(/&bull;/g, '•');
+    const svgBlob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
+    const oldUrl = btnSvg.getAttribute('href');
+    if (oldUrl && oldUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(oldUrl);
+    }
+    btnSvg.href = URL.createObjectURL(svgBlob);
+    btnSvg.download = `90plus_story_${activePackKey}_${activeStoryKey}.svg`;
+  }
+  
+  if (btnPng) {
+    btnPng.style.opacity = '0.5';
+    btnPng.style.pointerEvents = 'none';
+    
+    const canvas = document.getElementById('export-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      const width = 1080;
+      const height = 1920;
+      canvas.width = width;
+      canvas.height = height;
+      ctx.clearRect(0, 0, width, height);
+      
+      const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '').replace(/&bull;/g, '•');
+      const img = new Image();
+      const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      
+      img.onload = function() {
+        console.log("Image loaded successfully for PNG export:", activePackKey, activeStoryKey);
+        ctx.drawImage(img, 0, 0, width, height);
+        canvas.toBlob(function(pngBlob) {
+          if (pngBlob) {
+            const oldUrl = btnPng.getAttribute('href');
+            if (oldUrl && oldUrl.startsWith('blob:')) {
+              URL.revokeObjectURL(oldUrl);
+            }
+            btnPng.href = URL.createObjectURL(pngBlob);
+            btnPng.download = `90plus_story_${activePackKey}_${activeStoryKey}_hd.png`;
+            console.log("PNG blob generated and bound to button:", btnPng.download, btnPng.href);
+          }
+          btnPng.style.opacity = '1';
+          btnPng.style.pointerEvents = 'auto';
+        }, 'image/png');
+        URL.revokeObjectURL(url);
+      };
+      img.onerror = function(err) {
+        console.error("Image load error for PNG export:", activePackKey, activeStoryKey, err);
+        btnPng.style.opacity = '1';
+        btnPng.style.pointerEvents = 'auto';
+        URL.revokeObjectURL(url);
+      };
+      img.src = url;
+    } else {
+      btnPng.style.opacity = '1';
+      btnPng.style.pointerEvents = 'auto';
+    }
+  }
 }
 
 function renderStoryTabs() {
@@ -1724,8 +2313,6 @@ function renderStoryTabs() {
 
 function initInstagramStories() {
   const packTabs = document.querySelectorAll('.pack-tab');
-  const btnSvg = document.getElementById('btn-download-story-svg');
-  const btnPng = document.getElementById('btn-download-story-png');
   
   // Set initial tabs rendering
   renderStoryTabs();
@@ -1741,65 +2328,17 @@ function initInstagramStories() {
       });
     });
   }
-  
-  // Download SVG
-  if (btnSvg) {
-    btnSvg.addEventListener('click', () => {
-      const data = storiesDatabase[activePackKey][activeStoryKey];
-      const blob = new Blob([data.svg], { type: 'image/svg+xml;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `90plus_story_${activePackKey}_${activeStoryKey}.svg`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    });
-  }
-  
-  // Download PNG HD (1080x1920)
-  if (btnPng) {
-    btnPng.addEventListener('click', () => {
-      const data = storiesDatabase[activePackKey][activeStoryKey];
-      const canvas = document.getElementById('export-canvas');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-      
-      const width = 1080;
-      const height = 1920;
-      canvas.width = width;
-      canvas.height = height;
-      
-      ctx.clearRect(0, 0, width, height);
-      
-      const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '');
-      const img = new Image();
-      const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      
-      img.onload = function() {
-        ctx.drawImage(img, 0, 0, width, height);
-        canvas.toBlob(function(pngBlob) {
-          const pngUrl = URL.createObjectURL(pngBlob);
-          const a = document.createElement('a');
-          a.href = pngUrl;
-          a.download = `90plus_story_${activePackKey}_${activeStoryKey}_hd.png`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(pngUrl);
-        }, 'image/png');
-        URL.revokeObjectURL(url);
-      };
-      img.src = url;
-    });
-  }
 }
 
 // 10. INITIALIZE ALL PORTAL COMPONENT ACTIONS
-document.addEventListener('DOMContentLoaded', () => {
+function initializeAll() {
   updateLogoRender();
   initInstagramHighlights();
   initInstagramStories();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeAll);
+} else {
+  initializeAll();
+}

@@ -48,7 +48,7 @@
   <g transform="translate(120, 1440)">
     <rect x="0" y="0" width="840" height="2" fill="#171717" />
     <text y="60" class="story-font" font-weight="400" font-size="30" fill="#888888">Creamos soluciones digitales pensadas para crecer.</text>
-    <text x="840" y="60" class="story-font" font-weight="700" font-size="24" fill="#39FF14" text-anchor="end">90plus.studio</text>
+    <text x="840" y="60" class="story-font" font-weight="700" font-size="24" fill="#39FF14" text-anchor="end">90plus.studio_</text>
   </g>
 
   <!-- Footer -->

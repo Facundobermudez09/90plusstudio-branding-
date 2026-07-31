@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-3" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-3)" opacity="0.6" />
+
+  <!-- Grid Borders -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">03 — PREGUNTAS FRECUENTES</text>
+    
+    <!-- Question Title -->
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Qué tecnologías</tspan>
+      <tspan x="0" dy="68">utilizan para construir?</tspan>
+    </text>
+
+    <!-- Tech Grid Container -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="740" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      
+      <text x="50" y="60" class="story-font" font-weight="400" font-size="28" fill="#888888">Stack moderno de alto rendimiento y escalabilidad:</text>
+
+      <!-- Tech Badges Grid -->
+      <g transform="translate(50, 100)">
+        <!-- Row 1 -->
+        <rect x="0" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Next.js</text>
+
+        <rect x="255" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="370" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">React</text>
+
+        <rect x="510" y="0" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="625" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">TypeScript</text>
+
+        <!-- Row 2 -->
+        <rect x="0" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Node.js</text>
+
+        <rect x="255" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="370" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">PostgreSQL</text>
+
+        <rect x="510" y="90" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="625" y="132" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Supabase</text>
+
+        <!-- Row 3 -->
+        <rect x="0" y="180" width="230" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="115" y="222" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">Redis</text>
+
+        <rect x="255" y="180" width="485" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="497" y="222" text-anchor="middle" class="story-font" font-weight="700" font-size="22" fill="#FFFFFF">TailwindCSS</text>
+      </g>
+
+      <!-- AI Special Block -->
+      <g transform="translate(50, 400)">
+        <rect x="0" y="0" width="740" height="280" rx="20" fill="#0D1F0D" stroke="#39FF14" stroke-width="2" />
+        <circle cx="50" cy="50" r="12" fill="#39FF14" />
+        <text x="80" y="58" class="story-font" font-weight="800" font-size="22" fill="#39FF14" letter-spacing="2">INTEGRACIÓN DE INTELIGENCIA ARTIFICIAL</text>
+
+        <text x="50" y="130" class="story-font" font-weight="400" font-size="30" fill="#FFFFFF" xml:space="preserve">
+          <tspan x="50" dy="0">Conectamos modelos de IA avanzados</tspan>
+          <tspan x="50" dy="50">(OpenAI / Anthropic APIs) para potenciar</tspan>
+          <tspan x="50" dy="50">tus flujos de trabajo y automatizaciones.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>

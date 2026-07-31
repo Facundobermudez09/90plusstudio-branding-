@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-faq-2" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-faq-2)" opacity="0.6" />
+
+  <!-- Grid Borders -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(120, 460)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — PREGUNTAS FRECUENTES</text>
+    
+    <!-- Question Title -->
+    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+      <tspan x="0" dy="0">¿Quién es el dueño</tspan>
+      <tspan x="0" dy="68">del código fuente?</tspan>
+    </text>
+
+    <!-- Answer Box -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
+      
+      <!-- Key highlight header -->
+      <rect x="60" y="50" width="340" height="54" rx="27" fill="#112911" stroke="#39FF14" stroke-width="2" />
+      <circle cx="90" cy="77" r="8" fill="#39FF14" />
+      <text x="112" y="84" class="story-font" font-weight="800" font-size="20" fill="#39FF14" letter-spacing="2">100% PROPIEDAD TUYA</text>
+
+      <text x="60" y="170" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
+        <tspan x="60" dy="0">El cliente es el único dueño del 100%</tspan>
+        <tspan x="60" dy="54">del código fuente, repositorios, bases</tspan>
+        <tspan x="60" dy="54">de datos e infraestructura una vez</tspan>
+        <tspan x="60" dy="54">finalizado el proyecto.</tspan>
+        <tspan x="60" dy="80">Entregamos todo configurado</tspan>
+        <tspan x="60" dy="54">y listo para producción.</tspan>
+      </text>
+
+      <!-- Key Icons Row -->
+      <g transform="translate(60, 520)">
+        <rect x="0" y="0" width="220" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="110" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">REPOSITORIO</text>
+        
+        <rect x="240" y="0" width="220" height="70" rx="14" fill="#141414" stroke="#262626" stroke-width="2" />
+        <text x="350" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#FFFFFF">BASE DE DATOS</text>
+
+        <rect x="480" y="0" width="240" height="70" rx="14" fill="#141414" stroke="#39FF14" stroke-width="2" />
+        <text x="600" y="42" text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#39FF14">INFRAESTRUCTURA</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; PREGUNTAS FRECUENTES</text>
+  </g>
+</svg>

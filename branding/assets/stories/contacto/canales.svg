@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&amp;display=swap');
+      .story-font { font-family: 'Geist', sans-serif; }
+    </style>
+    <pattern id="grid-ct-1" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#171717" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#000000" />
+  <rect width="1080" height="1920" fill="url(#grid-ct-1)" opacity="0.6" />
+
+  <!-- Grid Borders -->
+  <rect x="60" y="60" width="960" height="1800" fill="none" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="360" x2="1020" y2="360" stroke="#171717" stroke-width="2" />
+  <line x1="60" y1="1560" x2="1020" y2="1560" stroke="#171717" stroke-width="2" />
+
+  <!-- Top Logo -->
+  <g transform="translate(540, 180)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(120, 420)">
+    <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">01 — CANALES DIRECTOS</text>
+    
+    <!-- Title -->
+    <text y="90" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF">Hablemos directamente<tspan fill="#39FF14">.</tspan></text>
+
+    <!-- Channels Container -->
+    <g transform="translate(0, 150)">
+      
+      <!-- Email Box -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <!-- Mail Icon -->
+        <rect x="48" y="50" width="24" height="18" rx="3" fill="none" stroke="#39FF14" stroke-width="2" />
+        <path d="M 48 52 L 60 62 L 72 52" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">CORREO ELECTRÓNICO</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">team90plusstudio@gmail.com</text>
+      </g>
+
+      <!-- Web Box -->
+      <g transform="translate(0, 140)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <!-- Globe Icon -->
+        <circle cx="60" cy="60" r="11" fill="none" stroke="#39FF14" stroke-width="2.5" />
+        <ellipse cx="60" cy="60" rx="4.5" ry="11" fill="none" stroke="#39FF14" stroke-width="2" />
+        <line x1="49" y1="60" x2="71" y2="60" stroke="#39FF14" stroke-width="2" />
+        
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">PÁGINA WEB OFICIAL</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">90plusstudio.com.ar</text>
+      </g>
+
+      <!-- Instagram Box -->
+      <g transform="translate(0, 280)">
+        <rect x="0" y="0" width="840" height="120" rx="20" fill="#0A0A0A" stroke="#171717" stroke-width="2" />
+        <circle cx="60" cy="60" r="22" fill="#141414" stroke="#333" stroke-width="2" />
+        <!-- Instagram Camera Icon -->
+        <rect x="48" y="48" width="24" height="24" rx="6" fill="none" stroke="#39FF14" stroke-width="2.5" />
+        <circle cx="60" cy="60" r="5.5" fill="none" stroke="#39FF14" stroke-width="2" />
+        <circle cx="66" cy="54" r="1.5" fill="#39FF14" />
+        
+        <text x="105" y="46" class="story-font" font-weight="600" font-size="16" fill="#888888" letter-spacing="2">INSTAGRAM</text>
+        <text x="105" y="84" class="story-font" font-weight="800" font-size="28" fill="#FFFFFF">@90plusstudio_</text>
+      </g>
+
+      <!-- WhatsApp Section Container -->
+      <g transform="translate(0, 420)">
+        <rect x="0" y="0" width="840" height="350" rx="24" fill="#0A0A0A" stroke="#1D381D" stroke-width="3" />
+        
+        <!-- Header -->
+        <rect x="45" y="30" width="290" height="42" rx="21" fill="#112911" stroke="#39FF14" stroke-width="1.5" />
+        <circle cx="68" cy="51" r="5" fill="#39FF14" />
+        <text x="86" y="57" class="story-font" font-weight="800" font-size="16" fill="#39FF14" letter-spacing="2">WHATSAPP DIRECTO</text>
+
+        <!-- Contact 1: Luciano -->
+        <g transform="translate(45, 95)">
+          <rect x="0" y="0" width="750" height="95" rx="16" fill="#111111" stroke="#222" stroke-width="2" />
+          <circle cx="45" cy="47.5" r="20" fill="#191919" />
+          <text x="45" y="54.5" text-anchor="middle" class="story-font" font-weight="800" font-size="18" fill="#39FF14">L</text>
+          
+          <text x="85" y="40" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Luciano</text>
+          <text x="85" y="68" class="story-font" font-weight="500" font-size="22" fill="#888888">+54 9 264 565-0131</text>
+        </g>
+
+        <!-- Contact 2: Facundo -->
+        <g transform="translate(45, 210)">
+          <rect x="0" y="0" width="750" height="95" rx="16" fill="#111111" stroke="#222" stroke-width="2" />
+          <circle cx="45" cy="47.5" r="20" fill="#191919" />
+          <text x="45" y="54.5" text-anchor="middle" class="story-font" font-weight="800" font-size="18" fill="#39FF14">F</text>
+          
+          <text x="85" y="40" class="story-font" font-weight="700" font-size="20" fill="#FFFFFF">Facundo</text>
+          <text x="85" y="68" class="story-font" font-weight="500" font-size="22" fill="#888888">+54 9 264 561-4261</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(540, 1790)">
+    <text text-anchor="middle" class="story-font" font-weight="700" font-size="18" fill="#555555" letter-spacing="4">90+ STUDIO &bull; CANALES DE CONTACTO</text>
+  </g>
+</svg>
