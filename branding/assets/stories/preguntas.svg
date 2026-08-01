@@ -15,23 +15,23 @@
   </g>
   
   <!-- Content Group -->
-  <g transform="translate(120, 480)">
+  <g transform="translate(540, 560)">
     <!-- Title -->
-    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
     
     <!-- Subtitle -->
-    <text y="240" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+    <text y="240" text-anchor="middle" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
       <tspan x="0" dy="0">Respondemos las consultas más comunes</tspan>
       <tspan x="0" dy="48">antes de comenzar un proyecto.</tspan>
     </text>
     
     <!-- Central Highlight Block -->
-    <g transform="translate(0, 480)">
+    <g transform="translate(-80, 480)">
       <!-- Minimalist linear card / accent -->
       <line x1="0" y1="0" x2="160" y2="0" stroke="#39FF14" stroke-width="4"/>
-      <text y="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
-        <tspan x="0" dy="0">Todo lo que</tspan>
-        <tspan x="0" dy="64">necesitás saber.</tspan>
+      <text y="80" text-anchor="middle" x="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
+        <tspan x="80" dy="0">Todo lo que</tspan>
+        <tspan x="80" dy="64">necesitás saber.</tspan>
       </text>
     </g>
   </g>

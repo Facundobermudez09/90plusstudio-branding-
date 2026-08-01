@@ -26,15 +26,18 @@
   <!-- Content -->
   <g transform="translate(120, 460)">
     <text class="story-font" font-weight="800" font-size="34" letter-spacing="4" fill="#39FF14">02 — PREGUNTAS FRECUENTES</text>
-    
-    <!-- Question Title -->
-    <text y="100" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
+  </g>
+
+  <!-- Question Title -->
+  <g transform="translate(540, 560)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="54" letter-spacing="-1" fill="#FFFFFF" xml:space="preserve">
       <tspan x="0" dy="0">¿Quién es el dueño</tspan>
       <tspan x="0" dy="68">del código fuente?</tspan>
     </text>
+  </g>
 
-    <!-- Answer Box -->
-    <g transform="translate(0, 240)">
+  <!-- Answer Box -->
+  <g transform="translate(120, 700)">
       <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
       
       <!-- Key highlight header -->

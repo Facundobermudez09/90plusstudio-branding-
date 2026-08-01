@@ -936,19 +936,19 @@ const storiesDatabase = {
     <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
   </g>
   
-  <g transform="translate(120, 480)">
-    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
+  <g transform="translate(540, 560)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
     
-    <text y="240" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+    <text y="240" text-anchor="middle" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
       <tspan x="0" dy="0">Respondemos las consultas más comunes</tspan>
       <tspan x="0" dy="48">antes de comenzar un proyecto.</tspan>
     </text>
     
-    <g transform="translate(0, 480)">
+    <g transform="translate(-80, 480)">
       <line x1="0" y1="0" x2="160" y2="0" stroke="#39FF14" stroke-width="4"/>
-      <text y="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
-        <tspan x="0" dy="0">Todo lo que</tspan>
-        <tspan x="0" dy="64">necesitás saber.</tspan>
+      <text y="80" text-anchor="middle" x="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
+        <tspan x="80" dy="0">Todo lo que</tspan>
+        <tspan x="80" dy="64">necesitás saber.</tspan>
       </text>
     </g>
   </g>
@@ -1681,17 +1681,17 @@ const storiesDatabase = {
   <g transform="translate(540, 180)">
     <text text-anchor="middle" class="story-font" font-weight="700" font-size="28" letter-spacing="12" fill="#FFFFFF">90<tspan fill="#39FF14">+</tspan> STUDIO</text>
   </g>
-  <g transform="translate(120, 480)">
-    <text class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
-    <text y="240" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
+  <g transform="translate(540, 560)">
+    <text text-anchor="middle" class="story-font" font-weight="800" font-size="76" fill="#FFFFFF">Preguntas<tspan x="0" dy="90">frecuentes<tspan fill="#39FF14">.</tspan></tspan></text>
+    <text y="240" text-anchor="middle" class="story-font" font-weight="400" font-size="32" fill="#888888" xml:space="preserve">
       <tspan x="0" dy="0">Respondemos las consultas más comunes</tspan>
       <tspan x="0" dy="48">antes de comenzar un proyecto.</tspan>
     </text>
-    <g transform="translate(0, 480)">
+    <g transform="translate(-80, 480)">
       <line x1="0" y1="0" x2="160" y2="0" stroke="#39FF14" stroke-width="4"/>
-      <text y="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
-        <tspan x="0" dy="0">Todo lo que</tspan>
-        <tspan x="0" dy="64">necesitás saber.</tspan>
+      <text y="80" text-anchor="middle" x="80" class="story-font" font-weight="600" font-size="44" fill="#FFFFFF" xml:space="preserve">
+        <tspan x="80" dy="0">Todo lo que</tspan>
+        <tspan x="80" dy="64">necesitás saber.</tspan>
       </text>
     </g>
   </g>
@@ -1782,8 +1782,7 @@ const storiesDatabase = {
     <g transform="translate(0, 240)">
       <rect x="0" y="0" width="840" height="660" rx="24" fill="#0A0A0A" stroke="#171717" stroke-width="3" />
       <rect x="60" y="50" width="340" height="54" rx="27" fill="#112911" stroke="#39FF14" stroke-width="2" />
-      <circle cx="90" cy="77" r="8" fill="#39FF14" />
-      <text x="112" y="84" class="story-font" font-weight="800" font-size="20" fill="#39FF14" letter-spacing="2">100% PROPIEDAD TUYA</text>
+      <text x="230" y="84" text-anchor="middle" class="story-font" font-weight="800" font-size="20" fill="#39FF14" letter-spacing="2">100% PROPIEDAD TUYA</text>
       <text x="60" y="170" class="story-font" font-weight="400" font-size="32" fill="#D4D4D4" xml:space="preserve">
         <tspan x="60" dy="0">El cliente es el único dueño del 100%</tspan>
         <tspan x="60" dy="54">del código fuente, repositorios, bases</tspan>
@@ -2238,11 +2237,9 @@ function updateStoryRender() {
       
       const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '').replace(/&bull;/g, '•');
       const img = new Image();
-      const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
+      const svgBase64 = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(cleanSvg)));
       
       img.onload = function() {
-        console.log("Image loaded successfully for PNG export:", activePackKey, activeStoryKey);
         ctx.drawImage(img, 0, 0, width, height);
         canvas.toBlob(function(pngBlob) {
           if (pngBlob) {
@@ -2252,20 +2249,16 @@ function updateStoryRender() {
             }
             btnPng.href = URL.createObjectURL(pngBlob);
             btnPng.download = `90plus_story_${activePackKey}_${activeStoryKey}_hd.png`;
-            console.log("PNG blob generated and bound to button:", btnPng.download, btnPng.href);
           }
           btnPng.style.opacity = '1';
           btnPng.style.pointerEvents = 'auto';
         }, 'image/png');
-        URL.revokeObjectURL(url);
       };
-      img.onerror = function(err) {
-        console.error("Image load error for PNG export:", activePackKey, activeStoryKey, err);
+      img.onerror = function() {
         btnPng.style.opacity = '1';
         btnPng.style.pointerEvents = 'auto';
-        URL.revokeObjectURL(url);
       };
-      img.src = url;
+      img.src = svgBase64;
     } else {
       btnPng.style.opacity = '1';
       btnPng.style.pointerEvents = 'auto';
@@ -2330,11 +2323,630 @@ function initInstagramStories() {
   }
 }
 
+// 9. INSTAGRAM FEED POSTS ENGINE (4:5 / 1080x1350)
+const feedDatabase = {
+  renderizado_js: {
+    s1: {
+      title: "01: El Gancho",
+      desc: "Portada estratégica de alto impacto técnico e invisibilidad web.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-badge { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 700; fill: #39FF14; letter-spacing: 4px; text-transform: uppercase; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 68px; font-weight: 800; fill: #FFFFFF; line-height: 1.15; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 400; fill: #A1A1AA; line-height: 1.5; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  
+  <!-- Grid background -->
+  <path d="M 0 150 L 1080 150 M 0 300 L 1080 300 M 0 450 L 1080 450 M 0 600 L 1080 600 M 0 750 L 1080 750 M 0 900 L 1080 900 M 0 1050 L 1080 1050 M 0 1200 L 1080 1200" stroke="#141416" stroke-width="1.5" />
+  <path d="M 150 0 L 150 1350 M 300 0 L 300 1350 M 450 0 L 450 1350 M 600 0 L 600 1350 M 750 0 L 750 1350 M 900 0 L 900 1350" stroke="#141416" stroke-width="1.5" />
+  
+  <!-- Header (Safe Top Margin: 100px) -->
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">SEO TÉCNICO • 01/08</text>
+  
+  <!-- Graphic Element Box -->
+  <g transform="translate(90, 180)">
+    <rect width="900" height="380" rx="20" fill="#121215" stroke="#27272A" stroke-width="2.5" />
+    <circle cx="45" cy="40" r="7" fill="#FF5F56" />
+    <circle cx="70" cy="40" r="7" fill="#FFBD2E" />
+    <circle cx="95" cy="40" r="7" fill="#27C93F" />
+    <text x="855" y="46" fill="#52525B" font-family="'Geist', sans-serif" font-size="16" text-anchor="end">googlebot-crawler.js</text>
+    <line x1="0" y1="70" x2="900" y2="70" stroke="#27272A" stroke-width="2" />
+    
+    <text x="45" y="130" fill="#27C93F" font-family="monospace" font-size="26">HTTP/1.1 200 OK</text>
+    <text x="45" y="185" fill="#71717A" font-family="monospace" font-size="22">&lt;div id="app"&gt;&lt;/div&gt; <tspan fill="#F59E0B">&lt;!-- &lt; 1KB Raw HTML --&gt;</tspan></text>
+    <text x="45" y="240" fill="#EF4444" font-family="monospace" font-size="22">&lt;script src="bundle.js"&gt;&lt;/script&gt; <tspan fill="#EF4444">[JS Execution Timeout]</tspan></text>
+    
+    <rect x="45" y="285" width="810" height="55" rx="10" fill="#2D0607" stroke="#EF4444" stroke-width="1.5" />
+    <text x="70" y="320" fill="#FCA5A5" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600">⚠️ Estado: Tu contenido es INVISIBLE para el buscador.</text>
+  </g>
+  
+  <!-- Main Typography -->
+  <g transform="translate(90, 630)">
+    <text class="f-badge" x="0" y="0">El error silencioso de $10,000</text>
+    <text class="f-title" x="0" y="80">Tu web es <tspan class="f-accent">hermosa</tspan>,</text>
+    <text class="f-title" x="0" y="160">pero Google la ve</text>
+    <text class="f-title" x="0" y="240">totalmente <tspan fill="#EF4444">en blanco.</tspan></text>
+    
+    <text class="f-body" x="0" y="320">
+      <tspan x="0" dy="0">El mito del renderizado de JavaScript que arruina</tspan>
+      <tspan x="0" dy="38">el SEO de cientos de empresas sin que sus dueños lo sepan.</tspan>
+    </text>
+  </g>
+
+  <!-- Footer (Safe Bottom Margin: 1250px) -->
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para entender qué pasa →</text>
+  </g>
+</svg>`
+    },
+    s2: {
+      title: "02: El Problema",
+      desc: "El mito del diseño visual vs. cómo navegan las arañas de búsqueda.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 54px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">02/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">El Mito: "Si yo la veo en mi</text>
+    <text class="f-title" x="0" y="65">pantalla, <tspan class="f-accent">Google también."</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="430" height="500" rx="20" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="30" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#39FF14">Lo que ves TÚ (Navegador)</text>
+    <rect x="30" y="85" width="370" height="175" rx="12" fill="#1E1E24" />
+    <text x="50" y="145" font-family="'Geist', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">Sitio Web Premium</text>
+    <text x="50" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" fill="#A1A1AA">
+      <tspan x="50" dy="0">Diseño interactivo, animaciones</tspan>
+      <tspan x="50" dy="24">y catálogo activo.</tspan>
+    </text>
+    <rect x="30" y="290" width="370" height="175" rx="12" fill="#052E16" stroke="#39FF14" stroke-width="1.5" />
+    <text x="50" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#39FF14">✓ 100% Funcional</text>
+    <text x="50" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" fill="#A1A1AA">
+      <tspan x="50" dy="0">El usuario interactúa sin notar</tspan>
+      <tspan x="50" dy="24">problemas aparentes.</tspan>
+    </text>
+
+    <rect x="470" y="0" width="430" height="500" rx="20" fill="#121215" stroke="#EF4444" stroke-width="2" />
+    <text x="500" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#EF4444">Lo que lee GOOGLEBOT</text>
+    <rect x="500" y="85" width="370" height="175" rx="12" fill="#18181B" />
+    <text x="520" y="145" font-family="monospace" font-size="20" fill="#EF4444">&lt;div id="root"&gt;&lt;/div&gt;</text>
+    <text x="520" y="185" font-family="monospace" font-size="16" fill="#71717A">&lt;!-- Sin HTML semántico --&gt;</text>
+    <rect x="500" y="290" width="370" height="175" rx="12" fill="#450A0A" stroke="#EF4444" stroke-width="1.5" />
+    <text x="520" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#FCA5A5">✗ Página Vacía</text>
+    <text x="520" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" fill="#FCA5A5">
+      <tspan x="520" dy="0">La araña indexa un cascarón</tspan>
+      <tspan x="520" dy="24">sin texto ni enlaces.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 900)">
+    <text class="f-body" x="0" y="0">
+      <tspan x="0" dy="0">Muchas plantillas web modernas de bajo costo están construidas</tspan>
+      <tspan x="0" dy="38">como <tspan font-weight="700" fill="#FFFFFF">Single Page Applications (SPA)</tspan> 100% dinámicas.</tspan>
+      <tspan x="0" dy="76">Todo el contenido depende de que un script se ejecute en el cliente.</tspan>
+      <tspan x="0" dy="114">Si el robot pasa antes de ejecutarlo, para Google tu negocio no existe.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para continuar →</text>
+  </g>
+</svg>`
+    },
+    s3: {
+      title: "03: ¿Por qué ocurre?",
+      desc: "Explicación técnica simplificada: El proceso de 2 fases de Googlebot.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 52px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">03/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">¿Por qué ocurre este desastre?</text>
+    <text class="f-title" x="0" y="65">Google indexa en <tspan class="f-accent">2 FASES separadas.</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="900" height="230" rx="20" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <rect x="30" y="25" width="160" height="36" rx="8" fill="#39FF14" />
+    <text x="110" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#000000" text-anchor="middle">FASE 1: RÁPIDA</text>
+    <text x="210" y="51" font-family="'Geist', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Descarga del HTML Raw (Inmediato)</text>
+    <text x="30" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#A1A1AA">
+      <tspan x="30" dy="0">Google lee el código puro de inmediato. Si tu sitio entrega un HTML vacío</tspan>
+      <tspan x="30" dy="30">(dependiente de JS), indexa una página sin palabras ni valor de búsqueda.</tspan>
+    </text>
+    <text x="30" y="185" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600" fill="#EF4444">⚠️ Tiempo de espera: 0 segundos.</text>
+
+    <rect x="0" y="260" width="900" height="250" rx="20" fill="#121215" stroke="#F59E0B" stroke-width="2" />
+    <rect x="30" y="285" width="180" height="36" rx="8" fill="#F59E0B" />
+    <text x="120" y="309" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#000000" text-anchor="middle">FASE 2: DIFERIDA</text>
+    <text x="230" y="311" font-family="'Geist', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Renderizado de JavaScript (WRS)</text>
+    <text x="30" y="365" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#A1A1AA">
+      <tspan x="30" dy="0">Ejecutar JS consume gigavatios de cómputo para Google. Por eso, coloca</tspan>
+      <tspan x="30" dy="30">tu web en una cola de espera que puede tardar días o semanas.</tspan>
+    </text>
+    <text x="30" y="450" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600" fill="#F59E0B">⏳ Demora: De 3 días hasta 3 semanas (o nunca si agotas presupuesto).</text>
+  </g>
+
+  <g transform="translate(90, 910)">
+    <text class="f-body" x="0" y="0">
+      <tspan x="0" dy="0">Resultado: Durante semanas, Google posiciona a tus competidores</tspan>
+      <tspan x="0" dy="38">mientras tu página espera su turno de renderizado.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para continuar →</text>
+  </g>
+</svg>`
+    },
+    s4: {
+      title: "04: Consecuencias Reales",
+      desc: "El impacto en dólares y posicionamiento para el negocio.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 52px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #EF4444; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">04/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">Las Consecuencias Reales</text>
+    <text class="f-title" x="0" y="65">para la <tspan class="f-accent">facturación de tu empresa:</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="48" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#EF4444">1. Desperdicio del Crawl Budget</text>
+    <text x="35" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">Googlebot asigna un tiempo limitado. Si consume ese tiempo procesando</tspan>
+      <tspan x="35" dy="28">scripts pesados, abandona el sitio sin indexar tus productos.</tspan>
+    </text>
+
+    <rect x="0" y="175" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="223" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#EF4444">2. Páginas Huérfanas Invisibles</text>
+    <text x="35" y="267" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">Los enlaces dinámicos por JS no se descubren a tiempo. Tus nuevos</tspan>
+      <tspan x="35" dy="28">artículos o servicios quedan completamente en el olvido.</tspan>
+    </text>
+
+    <rect x="0" y="350" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="398" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#EF4444">3. Quema de Presupuesto en Ads</text>
+    <text x="35" y="442" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">Dependes exclusivamente de tráfico pagado porque tu tráfico orgánico</tspan>
+      <tspan x="35" dy="28">es prácticamente nulo.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 910)">
+    <rect x="0" y="0" width="900" height="140" rx="16" fill="#2A080C" stroke="#EF4444" stroke-width="1.5" />
+    <text x="35" y="45" font-family="'Geist', sans-serif" font-size="20" font-weight="700" fill="#FCA5A5">DATO TÉCNICO COMPROBADO:</text>
+    <text x="35" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#FCA5A5">
+      <tspan x="35" dy="0">El 40% del contenido basado puramente en JS tarda más de 20 días en ser</tspan>
+      <tspan x="35" dy="26">procesado por el crawler de Google en sitios sin autoridad masiva.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para ver la solución →</text>
+  </g>
+</svg>`
+    },
+    s5: {
+      title: "05: La Solución Técnica",
+      desc: "Server-Side Rendering (SSR) y Static Site Generation (SSG).",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 52px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">05/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">La Solución Profesional:</text>
+    <text class="f-title" x="0" y="65"><tspan class="f-accent">SSR</tspan> &amp; <tspan class="f-accent">Hidratación Progresiva.</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="900" height="500" rx="20" fill="#121215" stroke="#39FF14" stroke-width="2" />
+    <text x="35" y="55" font-family="'Geist', sans-serif" font-size="26" font-weight="700" fill="#39FF14">Servidor / CDN (90+ Studio Architecture)</text>
+    
+    <rect x="35" y="90" width="830" height="105" rx="12" fill="#1E1E24" />
+    <text x="60" y="130" font-family="'Geist', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">1. Pre-renderizado en Servidor (SSR/SSG)</text>
+    <text x="60" y="162" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" fill="#A1A1AA">Entregamos el HTML 100% completo e indexable en menos de 50 milisegundos.</text>
+    
+    <rect x="35" y="215" width="830" height="105" rx="12" fill="#1E1E24" />
+    <text x="60" y="255" font-family="'Geist', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">2. Googlebot lee el HTML completo al instante</text>
+    <text x="60" y="287" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" fill="#39FF14">✓ Indexación inmediata en Fase 1 sin esperar render diferido.</text>
+    
+    <rect x="35" y="340" width="830" height="120" rx="12" fill="#052E16" stroke="#39FF14" stroke-width="1" />
+    <text x="60" y="380" font-family="'Geist', sans-serif" font-size="22" font-weight="700" fill="#39FF14">3. Hidratación en el Navegador</text>
+    <text x="60" y="412" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" fill="#D4D4D8">El JavaScript se carga después en segundo plano para dar interactividad fluida.</text>
+  </g>
+
+  <g transform="translate(90, 910)">
+    <text class="f-body" x="0" y="0">
+      <tspan x="0" dy="0">Esto es exactamente la diferencia entre una plantilla comercial barata</tspan>
+      <tspan x="0" dy="38">y una <tspan font-weight="700" fill="#FFFFFF">arquitectura de software a medida</tspan> optimizada para SEO.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para la comparación →</text>
+  </g>
+</svg>`
+    },
+    s6: {
+      title: "06: Plantilla vs. Arquitectura",
+      desc: "Por qué una web profesional vale más que una plantilla barata.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 52px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">06/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">Por qué una web profesional</text>
+    <text class="f-title" x="0" y="65"><tspan class="f-accent">supera a cualquier plantilla:</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="430" height="500" rx="20" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="30" y="50" font-family="'Geist', sans-serif" font-size="22" font-weight="800" fill="#EF4444">Plantilla Genérica ($100)</text>
+    
+    <text x="30" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✗ HTML vacío (Client Rendering)</text>
+    <text x="30" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✗ 5MB+ de librerías JS inútiles</text>
+    <text x="30" y="220" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✗ Dependiente de Fase 2 de bot</text>
+    <text x="30" y="275" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✗ Bajo score Core Web Vitals</text>
+    <text x="30" y="330" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✗ Sin estructura semántica</text>
+    
+    <rect x="30" y="390" width="370" height="75" rx="10" fill="#2E0A0E" />
+    <text x="45" y="435" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#FCA5A5">Barata hoy, costosa mañana.</text>
+
+    <rect x="470" y="0" width="430" height="500" rx="20" fill="#121215" stroke="#39FF14" stroke-width="2" />
+    <text x="500" y="50" font-family="'Geist', sans-serif" font-size="22" font-weight="800" fill="#39FF14">90+ Custom Engineering</text>
+    
+    <text x="500" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✓ HTML 100% Pre-renderizado</text>
+    <text x="500" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✓ Zero Bloatware / Código Limpio</text>
+    <text x="500" y="220" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✓ Indexación inmediata (Fase 1)</text>
+    <text x="500" y="275" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✓ Puntajes 90+ en Lighthouse</text>
+    <text x="500" y="330" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">✓ Schemas y datos estructurados</text>
+    
+    <rect x="500" y="390" width="370" height="75" rx="10" fill="#052E16" />
+    <text x="515" y="435" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#39FF14">Un activo que genera ROI.</text>
+  </g>
+
+  <g transform="translate(90, 910)">
+    <text class="f-body" x="0" y="0">
+      <tspan x="0" dy="0">Un sitio web no es solo lo que tus ojos ven.</tspan>
+      <tspan x="0" dy="38">Es la <tspan font-weight="700" fill="#FFFFFF">infraestructura invisible</tspan> que trabaja 24/7 para atraer clientes.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para el checklist →</text>
+  </g>
+</svg>`
+    },
+    s7: {
+      title: "07: Conclusión & Checklist",
+      desc: "Cómo auditar tu web actual en 3 pasos sencillos.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 52px; font-weight: 800; fill: #FFFFFF; line-height: 1.2; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 25px; font-weight: 400; fill: #D4D4D8; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">07/08</text>
+
+  <g transform="translate(90, 190)">
+    <text class="f-title" x="0" y="0">Auditá tu sitio web hoy mismo</text>
+    <text class="f-title" x="0" y="65">en <tspan class="f-accent">3 simples pasos:</tspan></text>
+  </g>
+
+  <g transform="translate(90, 340)">
+    <rect x="0" y="0" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="48" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#39FF14">Paso 1: Desactiva JavaScript en tu navegador</text>
+    <text x="35" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">Entra a devtools (F12) y desactiva JS. Recarga la página.</tspan>
+      <tspan x="35" dy="28">¿Tu contenido de texto desapareció por completo?</tspan>
+    </text>
+
+    <rect x="0" y="175" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="223" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#39FF14">Paso 2: Usa la Inspección de URLs</text>
+    <text x="35" y="267" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">En Google Search Console, haz clic en "Ver página probada"</tspan>
+      <tspan x="35" dy="28">&gt; "HTML renderizado" y verifica el resultado.</tspan>
+    </text>
+
+    <rect x="0" y="350" width="900" height="150" rx="16" fill="#121215" stroke="#27272A" stroke-width="2" />
+    <text x="35" y="398" font-family="'Geist', sans-serif" font-size="24" font-weight="700" fill="#39FF14">Paso 3: Verifica la velocidad del servidor (TTFB)</text>
+    <text x="35" y="442" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="35" dy="0">Un TTFB mayor a 600ms indica infraestructura deficiente</tspan>
+      <tspan x="35" dy="28">que ahuyenta a los robots de búsqueda.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 910)">
+    <rect x="0" y="0" width="900" height="140" rx="16" fill="#121215" stroke="#39FF14" stroke-width="1.5" />
+    <text x="35" y="45" font-family="'Geist', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">CONCLUSIÓN CONTUNDENTE:</text>
+    <text x="35" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#D4D4D8">
+      <tspan x="35" dy="0">El diseño atrae a las personas, pero el código atrae a Google.</tspan>
+      <tspan x="35" dy="26">Sin ambos, tu web es solo un gasto sin retorno.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 1250)">
+    <text x="0" y="0" class="f-tag">Desliza para el cierre →</text>
+  </g>
+</svg>`
+    },
+    s8: {
+      title: "08: Cierre y CTA",
+      desc: "Llamado a guardar la publicación e interactuar.",
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .f-bg { fill: #0A0A0A; }
+      .f-title { font-family: 'Geist', sans-serif; font-size: 60px; font-weight: 800; fill: #FFFFFF; line-height: 1.15; }
+      .f-accent { fill: #39FF14; }
+      .f-body { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 400; fill: #A1A1AA; line-height: 1.6; }
+      .f-tag { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; fill: #71717A; letter-spacing: 2px; }
+      .f-brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 28px; font-weight: 700; fill: #FFFFFF; letter-spacing: 6px; }
+    </style>
+  </defs>
+  <rect width="1080" height="1350" class="f-bg" />
+  
+  <path d="M 0 300 L 1080 300 M 0 600 L 1080 600 M 0 900 L 1080 900" stroke="#141416" stroke-width="1.5" />
+  <path d="M 300 0 L 300 1350 M 600 0 L 600 1350 M 900 0 L 900 1350" stroke="#141416" stroke-width="1.5" />
+
+  <text x="90" y="110" class="f-brand">90+ <tspan fill="#39FF14">STUDIO</tspan></text>
+  <text x="990" y="110" class="f-tag" text-anchor="end">08/08</text>
+
+  <g transform="translate(90, 210)">
+    <text class="f-title" x="0" y="0">¿Tu web aprueba el</text>
+    <text class="f-title" x="0" y="75">test del <tspan class="f-accent">HTML invisible?</tspan></text>
+    
+    <text class="f-body" x="0" y="170">
+      <tspan x="0" dy="0">Guarda esta publicación para realizar la prueba en tu negocio</tspan>
+      <tspan x="0" dy="38">cuando estés frente a tu computadora.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 500)">
+    <rect x="0" y="0" width="900" height="320" rx="24" fill="#121215" stroke="#39FF14" stroke-width="2" />
+    
+    <path d="M 70 50 L 105 50 L 105 105 L 87.5 92 L 70 105 Z" fill="none" stroke="#39FF14" stroke-width="4" stroke-linejoin="round" />
+    <text x="135" y="80" font-family="'Geist', sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Guarda este post</text>
+    <text x="135" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="135" dy="0">Consúltalo cuando audites tu sitio web</tspan>
+      <tspan x="135" dy="28">o converses con tu equipo técnico.</tspan>
+    </text>
+    
+    <line x1="40" y1="160" x2="860" y2="160" stroke="#27272A" stroke-width="2" />
+    
+    <path d="M 70 215 C 70 200 85 188 105 188 C 125 188 140 200 140 215 C 140 230 125 242 105 242 L 85 250 L 90 232 C 78 228 70 222 70 215 Z" fill="none" stroke="#39FF14" stroke-width="4" stroke-linejoin="round" />
+    <text x="135" y="215" font-family="'Geist', sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Comenta "AUDITORÍA"</text>
+    <text x="135" y="250" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" fill="#A1A1AA">
+      <tspan x="135" dy="0">Si quieres saber si tu web actual sufre</tspan>
+      <tspan x="135" dy="28">de renderizado diferido de JS.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(90, 940)">
+    <text font-family="'Geist', sans-serif" font-size="24" font-style="italic" font-weight="600" fill="#FFFFFF">
+      <tspan x="0" dy="0">"La excelencia técnica no se ve a simple vista,</tspan>
+      <tspan x="0" dy="36">pero se refleja en los resultados de tu negocio."</tspan>
+    </text>
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#39FF14" x="0" y="90">— 90+ Studio</text>
+  </g>
+</svg>`
+    }
+  }
+};
+
+let activeFeedPackKey = 'renderizado_js';
+let activeFeedSlideKey = 's1';
+
+function updateFeedRender() {
+  const container = document.getElementById('feed-render-box');
+  const titleEl = document.getElementById('feed-meta-title');
+  const descEl = document.getElementById('feed-meta-desc');
+  if (!container || !titleEl || !descEl) return;
+
+  const data = feedDatabase[activeFeedPackKey][activeFeedSlideKey];
+  container.innerHTML = data.svg;
+  titleEl.textContent = data.title;
+  descEl.textContent = data.desc;
+
+  const btnSvg = document.getElementById('btn-download-feed-svg');
+  const btnPng = document.getElementById('btn-download-feed-png');
+
+  if (btnSvg) {
+    const cleanSvg = data.svg;
+    const svgBlob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
+    const oldUrl = btnSvg.getAttribute('href');
+    if (oldUrl && oldUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(oldUrl);
+    }
+    btnSvg.href = URL.createObjectURL(svgBlob);
+    btnSvg.download = `90plus_feed_${activeFeedPackKey}_${activeFeedSlideKey}.svg`;
+  }
+
+  if (btnPng) {
+    btnPng.style.opacity = '0.5';
+    btnPng.style.pointerEvents = 'none';
+
+    const canvas = document.getElementById('export-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      const width = 1080;
+      const height = 1350;
+      canvas.width = width;
+      canvas.height = height;
+      ctx.clearRect(0, 0, width, height);
+
+      const cleanSvg = data.svg.replace(/@import\s+url\([^)]+\);/g, '');
+      const img = new Image();
+      const svgBase64 = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(cleanSvg)));
+
+      img.onload = function() {
+        ctx.drawImage(img, 0, 0, width, height);
+        canvas.toBlob(function(pngBlob) {
+          if (pngBlob) {
+            const oldUrl = btnPng.getAttribute('href');
+            if (oldUrl && oldUrl.startsWith('blob:')) {
+              URL.revokeObjectURL(oldUrl);
+            }
+            btnPng.href = URL.createObjectURL(pngBlob);
+            btnPng.download = `90plus_feed_${activeFeedPackKey}_${activeFeedSlideKey}_hd.png`;
+          }
+          btnPng.style.opacity = '1';
+          btnPng.style.pointerEvents = 'auto';
+        }, 'image/png');
+      };
+      img.onerror = function() {
+        btnPng.style.opacity = '1';
+        btnPng.style.pointerEvents = 'auto';
+      };
+      img.src = svgBase64;
+    } else {
+      btnPng.style.opacity = '1';
+      btnPng.style.pointerEvents = 'auto';
+    }
+  }
+}
+
+function renderFeedTabs() {
+  const container = document.getElementById('feed-slide-tabs-container');
+  if (!container) return;
+
+  container.innerHTML = '';
+  const slides = feedDatabase[activeFeedPackKey];
+
+  let isFirst = true;
+  Object.keys(slides).forEach((key, index) => {
+    const data = slides[key];
+    const button = document.createElement('button');
+    button.className = `story-tab${isFirst ? ' active' : ''}`;
+    button.dataset.slide = key;
+
+    const num = String(index + 1).padStart(2, '0');
+    button.innerHTML = `
+      <span class="tab-num">${num}</span>
+      <span class="tab-name">${data.title}</span>
+    `;
+
+    if (isFirst) {
+      activeFeedSlideKey = key;
+      isFirst = false;
+    }
+
+    button.addEventListener('click', () => {
+      document.querySelectorAll('#feed-slide-tabs-container .story-tab').forEach(t => t.classList.remove('active'));
+      button.classList.add('active');
+      activeFeedSlideKey = key;
+      updateFeedRender();
+    });
+
+    container.appendChild(button);
+  });
+
+  updateFeedRender();
+}
+
+function initInstagramFeed() {
+  const packTabs = document.querySelectorAll('.feed-pack-tab');
+  renderFeedTabs();
+
+  if (packTabs.length) {
+    packTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        packTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        activeFeedPackKey = tab.dataset.pack;
+        renderFeedTabs();
+      });
+    });
+  }
+}
+
 // 10. INITIALIZE ALL PORTAL COMPONENT ACTIONS
 function initializeAll() {
   updateLogoRender();
   initInstagramHighlights();
   initInstagramStories();
+  initInstagramFeed();
 }
 
 if (document.readyState === 'loading') {

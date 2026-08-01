@@ -31,6 +31,7 @@
         <a href="#favicons" class="nav-link">Favicons</a>
         <a href="#tokens" class="nav-link">Tokens</a>
         <a href="#mockups" class="nav-link">Mockups</a>
+        <a href="#feed-posts" class="nav-link">Feed Posts</a>
         <a href="#highlights" class="nav-link">Destacadas</a>
         <a href="#stories" class="nav-link">Stories</a>
         <a href="#downloads" class="nav-link btn-download-all-nav">Descargas</a>
@@ -403,6 +404,69 @@
       </div>
     </section>
 
+    <!-- Instagram Feed Posts Section (Interactive Studio Generator) -->
+    <section id="feed-posts" class="section-card">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Generador de Publicaciones para Feed (4:5 / 1080x1350 px)</h2>
+          <p class="section-desc">Carruseles educativos e interactivos diseñados para generar autoridad técnica, romper mitos y mostrar la excelencia de <strong>90+ Studio</strong>. Previsualiza y descarga en vectorial (SVG) o PNG HD slide por slide.</p>
+        </div>
+      </div>
+
+      <div class="stories-layout">
+        <!-- Sidebar Selector -->
+        <div class="stories-sidebar">
+          <div class="control-group">
+            <label class="control-label">Carrusel Seleccionado</label>
+            <div class="pack-selector-tabs">
+              <button class="feed-pack-tab active" data-pack="renderizado_js">Renderizado de JS & SEO</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Diapositiva (Slide)</label>
+            <div class="story-selector-tabs" id="feed-slide-tabs-container">
+              <!-- Populated dynamically by index.js -->
+            </div>
+          </div>
+
+          <div class="story-meta-box">
+            <h4 id="feed-meta-title">Slide 01: El Gancho</h4>
+            <p id="feed-meta-desc">Portada de alto impacto visual y emocional.</p>
+            <div class="story-colors-preview">
+              <span class="color-dot-preview" style="background-color: #0A0A0A; border: 1px solid #333;" title="Negro absoluto"></span>
+              <span class="color-dot-preview" style="background-color: #FFFFFF;" title="Blanco"></span>
+              <span class="color-dot-preview" style="background-color: #39FF14;" title="Verde Flúor"></span>
+            </div>
+          </div>
+
+          <!-- Download Action Buttons -->
+          <div class="download-actions" style="margin-top: 24px;">
+            <a id="btn-download-feed-svg" class="btn btn-primary" href="#" download>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Descargar SVG
+            </a>
+            <a id="btn-download-feed-png" class="btn btn-secondary" href="#" download>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Exportar PNG HD (1080x1350)
+            </a>
+          </div>
+        </div>
+
+        <!-- Feed Simulator Viewport (Aspect ratio 4:5) -->
+        <div class="story-viewport-wrapper">
+          <div class="feed-simulator-frame">
+            <div class="feed-screen" id="feed-render-box">
+              <!-- Rendered SVG feed slide inline here -->
+            </div>
+          </div>
+          <div class="viewport-caption">
+            Formato Estándar Feed Instagram 4:5 (1080x1350 px) &bull; Previsualización Vectorial Activa
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Instagram Highlights Section -->
     <section id="highlights" class="section-card">
       <div class="section-header">
@@ -697,6 +761,6 @@
   <!-- Canvas elements for generating PNG download files locally -->
   <canvas id="export-canvas" style="display: none;"></canvas>
 
-  <script src="index.js?v=12"></script>
+  <script src="index.js?v=17"></script>
 </body>
 </html>
